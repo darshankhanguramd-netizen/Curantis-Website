@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Activity, Stethoscope, Scale, Heart, ArrowRight } from 'lucide-react';
+import { Activity, Stethoscope, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Virtual specialist services including diabetes care, respirology, weight management, and lifestyle medicine. OHIP-covered and private options available.',
+    'Virtual specialist diabetes, endocrinology, and respirology care. OHIP-covered consultations plus private allied health options.',
 };
 
 const services = [
@@ -40,38 +40,6 @@ const services = [
       'Chronic cough assessment',
       'Inhaler technique optimization',
       'Spirometry interpretation',
-    ],
-  },
-  {
-    icon: Scale,
-    title: 'Weight Management',
-    href: '/services/weight-management',
-    tag: 'Private / HSA / Benefits',
-    description:
-      'Medical weight management combining physician oversight, dietitian support, pharmacotherapy options (where appropriate), and behavioural coaching for sustainable results.',
-    conditions: [
-      'Medical weight loss assessment',
-      'Pharmacotherapy consultation (GLP-1 RA, etc.)',
-      'Registered Dietitian sessions',
-      'Metabolic health optimization',
-      'Post-bariatric follow-up',
-      'Weight-related comorbidity management',
-    ],
-  },
-  {
-    icon: Heart,
-    title: 'Lifestyle Medicine',
-    href: '/services/lifestyle-medicine',
-    tag: 'Private / HSA / Benefits',
-    description:
-      'Evidence-based lifestyle interventions targeting the root causes of chronic disease through nutrition, physical activity, stress management, and behaviour change.',
-    conditions: [
-      'Nutrition counseling',
-      'Exercise prescription',
-      'Stress and sleep optimization',
-      'Chronic disease prevention',
-      'Metabolic syndrome management',
-      'Certified Diabetes Educator sessions',
     ],
   },
 ];

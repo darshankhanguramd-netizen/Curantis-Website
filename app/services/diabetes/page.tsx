@@ -27,7 +27,7 @@ export default function DiabetesPage() {
             </div>
           </div>
           <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-brand-50 to-warm-50 flex items-center justify-center">
-            <p className="text-navy-400 text-sm">[Image: Lifestyle diabetes management]</p>
+            <p className="text-navy-400 text-sm">[Image: Day-to-day diabetes management]</p>
           </div>
         </div>
       </section>

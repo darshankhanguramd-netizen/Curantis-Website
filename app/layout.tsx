@@ -10,14 +10,12 @@ export const metadata: Metadata = {
     template: '%s | Curantis Specialty Care',
   },
   description:
-    'Virtual specialist care for diabetes, endocrinology, respirology, weight management, and lifestyle medicine. Serving Ontario OHIP patients with shorter wait times and no travel.',
+    'Virtual specialist care for diabetes, endocrinology, and respirology. Serving Ontario OHIP patients with shorter wait times and no travel.',
   keywords: [
     'virtual specialist care Ontario',
     'diabetes specialist Ontario',
     'endocrinologist virtual care',
     'respirology virtual consultation',
-    'weight management specialist Ontario',
-    'lifestyle medicine Ontario',
     'OHIP specialist referral',
     'virtual endocrinology Ontario',
     'telemedicine specialist Ontario',
@@ -31,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Curantis Specialty Care',
     title: 'Curantis Specialty Care — Virtual Specialist Care in Ontario',
     description:
-      'Expert diabetes, endocrinology, respirology, and lifestyle medicine care delivered virtually across Ontario.',
+      'Expert diabetes, endocrinology, and respirology care delivered virtually across Ontario.',
     images: [
       {
         url: '/images/og-default.jpg',
@@ -45,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Curantis Specialty Care',
     description:
-      'Virtual specialist care for Ontario patients. Diabetes, endocrinology, respirology, weight management.',
+      'Virtual specialist care for Ontario patients. Diabetes, endocrinology, and respirology.',
   },
   robots: {
     index: true,
@@ -77,7 +75,7 @@ export default function RootLayout({
               '@type': 'MedicalClinic',
               name: 'Curantis Specialty Care',
               description:
-                'Virtual multi-specialty clinic providing diabetes, endocrinology, respirology, weight management, and lifestyle medicine care to Ontario OHIP patients.',
+                'Virtual clinic providing diabetes, endocrinology, and respirology care to Ontario OHIP patients.',
               url: 'https://curantiscare.ca',
               telephone: '+1-905-555-0123',
               faxNumber: '+1-905-555-0124',
@@ -100,10 +98,6 @@ export default function RootLayout({
                 {
                   '@type': 'MedicalProcedure',
                   name: 'Virtual Respirology Consultation',
-                },
-                {
-                  '@type': 'MedicalProcedure',
-                  name: 'Weight Management Consultation',
                 },
               ],
               physician: {

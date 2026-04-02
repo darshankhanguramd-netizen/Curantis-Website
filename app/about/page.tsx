@@ -5,7 +5,7 @@ import { Target, Eye, Heart, Lightbulb, CheckCircle2 } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Curantis Specialty Care is a virtual multi-specialty clinic improving access to diabetes, endocrinology, respirology, and lifestyle medicine care across Ontario.',
+    'Curantis Specialty Care is a virtual clinic improving access to diabetes, endocrinology, and respirology care across Ontario.',
 };
 
 export default function AboutPage() {

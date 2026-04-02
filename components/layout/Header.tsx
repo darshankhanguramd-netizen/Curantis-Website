@@ -12,8 +12,6 @@ const navigation = [
     children: [
       { name: 'Diabetes Care', href: '/services/diabetes' },
       { name: 'Respirology', href: '/services/respirology' },
-      { name: 'Weight Management', href: '/services/weight-management' },
-      { name: 'Lifestyle Medicine', href: '/services/lifestyle-medicine' },
     ],
   },
   { name: 'How It Works', href: '/how-it-works' },
@@ -77,21 +75,30 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-navy-700 hover:text-brand-600 rounded-lg hover:bg-brand-50 transition-colors"
+                    aria-expanded={servicesOpen}
+                    aria-haspopup="true"
                   >
                     {item.name}
                     <ChevronDown className="w-3.5 h-3.5" />
                   </Link>
                   {servicesOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-soft-lg border border-navy-100 py-2 animate-fade-in">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block px-4 py-2.5 text-sm text-navy-700 hover:text-brand-600 hover:bg-brand-50 transition-colors"
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
+                    <div
+                      className="absolute left-0 top-full z-50 w-56 pt-2 -mt-2 animate-fade-in"
+                      role="menu"
+                      aria-label={`${item.name} submenu`}
+                    >
+                      <div className="rounded-xl bg-white shadow-soft-lg border border-navy-100 py-2">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.name}
+                            href={child.href}
+                            role="menuitem"
+                            className="block px-4 py-2.5 text-sm text-navy-700 hover:text-brand-600 hover:bg-brand-50 transition-colors"
+                          >
+                            {child.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>

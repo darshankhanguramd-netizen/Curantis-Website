@@ -4,7 +4,8 @@ import { ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Our Team',
-  description: 'Meet the team at Curantis Specialty Care — led by Dr. Darshan Singh Khangura, specialist in Internal Medicine and Endocrinology.',
+  description:
+    'Meet the physicians at Curantis Specialty Care — Dr. Darshan Singh Khangura (Internal Medicine & Endocrinology) and Dr. Namratta Kaur Ghatehorde (Internal Medicine & Respirology).',
 };
 
 const team = [
@@ -16,17 +17,25 @@ const team = [
     bio: 'Dr. Khangura is a specialist in Internal Medicine and Endocrinology & Metabolism, registered with the College of Physicians and Surgeons of Ontario. He completed his medical degree at Saba University School of Medicine and holds CPSO certifications in both Internal Medicine (2025) and Endocrinology & Metabolism (2021). Dr. Khangura founded Curantis Specialty Care to address chronic access gaps in Ontario\'s specialist care system — particularly for patients in underserved and rural communities managing complex diabetes and metabolic conditions. He brings a patient-centered approach to virtual care, combining clinical expertise with technology to deliver efficient, high-quality consultations.',
     image: null,
   },
+  {
+    name: 'Dr. Namratta Kaur Ghatehorde',
+    title: 'Specialist Physician — Respirology',
+    credentials: 'MD — Internal Medicine, Respirology',
+    cpso: '124983',
+    bio: 'Dr. Ghatehorde is a specialist in Internal Medicine and Respirology, registered with the College of Physicians and Surgeons of Ontario (CPSO). She earned her medical degree from Saba University School of Medicine (2013). She provides assessment and management of chronic respiratory conditions — including asthma, COPD, chronic cough, and related disorders — within a virtual care model that emphasizes clear communication with patients and referring physicians. Dr. Ghatehorde offers consultations in English and Punjabi. Current registration and practice details are available on the CPSO physician register.',
+    image: null,
+  },
 ];
 
 const alliedHealth = [
   {
     role: 'Registered Dietitian',
-    description: 'Individualized nutrition counseling for diabetes, weight management, and metabolic health.',
+    description: 'Individualized nutrition counseling for diabetes and related metabolic concerns.',
     status: 'Accepting patients',
   },
   {
     role: 'Certified Diabetes Educator (CDE)',
-    description: 'Self-management education, insulin training, CGM onboarding, and lifestyle coaching.',
+    description: 'Self-management education, insulin training, CGM onboarding, and diabetes care skills.',
     status: 'Accepting patients',
   },
   {
@@ -48,8 +57,8 @@ export default function TeamPage() {
         <div className="container-wide max-w-3xl">
           <h1>Our <span className="text-brand-600">Team</span></h1>
           <p className="mt-6 text-xl text-navy-600">
-            Curantis Specialty Care is led by a board-certified specialist and 
-            supported by a growing team of allied health professionals.
+            Our physicians are CPSO-registered specialists in endocrinology, diabetes, and
+            respirology — supported by a growing allied health team.
           </p>
         </div>
       </section>
@@ -57,7 +66,12 @@ export default function TeamPage() {
       <section className="section-padding bg-white">
         <div className="container-wide max-w-4xl">
           {team.map((member, i) => (
-            <div key={i} className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            <div
+              key={member.cpso}
+              className={`grid md:grid-cols-3 gap-8 lg:gap-12 ${
+                i > 0 ? 'mt-14 pt-14 md:mt-16 md:pt-16 border-t border-navy-100' : ''
+              }`}
+            >
               <div className="md:col-span-1">
                 <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-navy-100 to-brand-50 flex items-center justify-center">
                   <p className="text-navy-400 text-sm text-center px-4">[Professional headshot]</p>
@@ -73,7 +87,7 @@ export default function TeamPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm text-brand-600 hover:text-brand-800 mt-2"
                 >
-                  CPSO# {member.cpso} <ExternalLink className="w-3 h-3" />
+                  View CPSO register (CPSO# {member.cpso}) <ExternalLink className="w-3 h-3" />
                 </a>
                 <p className="mt-6 text-navy-700 leading-relaxed">{member.bio}</p>
               </div>

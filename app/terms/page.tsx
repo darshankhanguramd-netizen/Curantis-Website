@@ -43,12 +43,11 @@ export default function TermsPage() {
               cost to eligible Ontario residents with valid OHIP coverage.
             </p>
             <p>
-              <strong>Private-Pay Services:</strong> Allied health and lifestyle medicine 
-              services including, but not limited to, Registered Dietitian consultations, 
-              Certified Diabetes Educator sessions, respiratory therapy, medical weight 
-              management programs, lifestyle coaching, and nutrition counseling. These services 
-              are not covered by OHIP and are payable by the patient through personal payment, 
-              Health Spending Accounts (HSA), or extended health benefits plans.
+              <strong>Private-Pay Services:</strong> Allied health services including, but not
+              limited to, Registered Dietitian consultations, Certified Diabetes Educator
+              sessions, respiratory therapy, and nutrition counseling. These services are not
+              covered by OHIP and are payable by the patient through personal payment, Health
+              Spending Accounts (HSA), or extended health benefits plans.
             </p>
           </div>
 
@@ -111,11 +110,11 @@ export default function TermsPage() {
               cost of the consultation.
             </p>
             <p>
-              <strong>Private-Pay Services:</strong> Fees for allied health and lifestyle 
-              medicine services are listed on our Fee Schedule page and are subject to change 
-              with reasonable notice. Payment is due at the time of service unless alternative 
-              arrangements have been made. We accept credit card, debit, e-transfer, and 
-              direct billing to select Health Spending Account (HSA) providers.
+              <strong>Private-Pay Services:</strong> Fees for allied health services are listed on
+              our Fee Schedule page and are subject to change with reasonable notice. Payment is
+              due at the time of service unless alternative arrangements have been made. We accept
+              credit card, debit, e-transfer, and direct billing to select Health Spending Account
+              (HSA) providers.
             </p>
             <p>
               <strong>Missed Appointments and Cancellations:</strong> We require at least 

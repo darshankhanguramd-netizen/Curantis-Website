@@ -6,8 +6,6 @@ import {
   MapPin,
   Stethoscope,
   Activity,
-  Scale,
-  Heart,
   CheckCircle2,
   Users,
   FileText,
@@ -32,8 +30,8 @@ export default function HomePage() {
                 Without the Travel.
               </h1>
               <p className="mt-6 text-lg md:text-xl text-navy-600 leading-relaxed">
-                A virtual multi-specialty clinic providing expert diabetes, endocrinology, 
-                respirology, and lifestyle medicine care to patients across Ontario.
+                A virtual clinic focused on expert diabetes and endocrinology care, plus
+                respirology — for patients across Ontario.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/refer" className="btn-primary text-base">
@@ -140,7 +138,7 @@ export default function HomePage() {
               View All Services
             </Link>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
               {
                 icon: Activity,
@@ -155,20 +153,6 @@ export default function HomePage() {
                 href: '/services/respirology',
                 description: 'Asthma, COPD, interstitial lung disease, and chronic cough assessment.',
                 tag: 'OHIP Covered',
-              },
-              {
-                icon: Scale,
-                title: 'Weight Management',
-                href: '/services/weight-management',
-                description: 'Medical weight management with dietitian support, pharmacotherapy, and lifestyle coaching.',
-                tag: 'Private / HSA',
-              },
-              {
-                icon: Heart,
-                title: 'Lifestyle Medicine',
-                href: '/services/lifestyle-medicine',
-                description: 'Evidence-based programs for metabolic health, nutrition counseling, and chronic disease prevention.',
-                tag: 'Private / HSA',
               },
             ].map((service, i) => (
               <Link key={i} href={service.href} className="card-elevated p-6 group cursor-pointer">

@@ -242,8 +242,6 @@ export default function ReferPage() {
                       <option value="diabetes">Diabetes Care (OHIP)</option>
                       <option value="endocrinology">Endocrinology (OHIP)</option>
                       <option value="respirology">Respirology (OHIP)</option>
-                      <option value="weight-management">Weight Management (Private)</option>
-                      <option value="lifestyle-medicine">Lifestyle Medicine (Private)</option>
                       <option value="internal-medicine">Internal Medicine (OHIP)</option>
                     </select>
                   </div>

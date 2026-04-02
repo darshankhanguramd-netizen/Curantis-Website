@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Heart, Shield, Clock, MapPin, CheckCircle2, Phone } from 'lucide-react';
+import { Shield, Clock, MapPin, CheckCircle2, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'For Patients',
@@ -50,10 +50,9 @@ export default function ForPatientsPage() {
                 'COPD management',
                 'Chronic cough',
                 'Interstitial lung disease',
-                'Medical weight management',
-                'Nutrition counseling',
-                'Lifestyle and behaviour change support',
-                'Metabolic health optimization',
+                'Nutrition counseling (diabetes-focused)',
+                'Diabetes self-management education',
+                'Metabolic health as part of diabetes care',
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-brand-500 mt-1 shrink-0" />
@@ -90,7 +89,7 @@ export default function ForPatientsPage() {
           <div className="space-y-6">
             {[
               { q: 'Do I need a referral?', a: 'Yes. OHIP-covered specialist consultations require a referral from your family doctor or nurse practitioner. Some private-pay allied health services may not require a referral — contact us to confirm.' },
-              { q: 'Is there a cost?', a: 'Specialist physician consultations are covered by OHIP at no cost to you. Allied health services (dietitian, CDE, weight management programs) are private-pay. See our Fee Schedule for details.' },
+              { q: 'Is there a cost?', a: 'Specialist physician consultations are covered by OHIP at no cost to you. Allied health services (dietitian, CDE, respiratory therapy) are private-pay. See our Fee Schedule for details.' },
               { q: 'What technology do I need?', a: 'A smartphone, tablet, or computer with a camera, microphone, and internet connection. We\'ll send you instructions on how to join your video visit.' },
               { q: 'Is my information secure?', a: 'Yes. We use PHIPA-compliant platforms and encrypted video. Your health information is protected under Ontario\'s privacy legislation. See our Privacy Policy for details.' },
               { q: 'Can I see a specialist if I live in rural Ontario?', a: 'Absolutely — that\'s a core reason we exist. Our virtual model is designed specifically to serve patients in rural, northern, and underserved communities across Ontario.' },

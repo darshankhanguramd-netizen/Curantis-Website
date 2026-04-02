@@ -74,11 +74,10 @@ export default function PrivacyPage() {
               and similar technologies. This information is not linked to your PHI.
             </p>
             <p>
-              <strong>Billing Information:</strong> For private-pay services (weight management, 
-              lifestyle medicine, allied health), we may collect payment card details, Health 
-              Spending Account (HSA) information, or extended health benefits details. Payment 
-              processing is handled by PCI-DSS compliant third-party processors — we do not 
-              store full payment card numbers.
+              <strong>Billing Information:</strong> For private-pay allied health services, we may
+              collect payment card details, Health Spending Account (HSA) information, or extended
+              health benefits details. Payment processing is handled by PCI-DSS compliant third-party
+              processors — we do not store full payment card numbers.
             </p>
           </div>
 

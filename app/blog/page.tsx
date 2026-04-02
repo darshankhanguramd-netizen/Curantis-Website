@@ -34,22 +34,6 @@ const posts = [
     readTime: '6 min read',
   },
   {
-    slug: 'glp1-weight-management',
-    title: 'GLP-1 Medications for Weight Management: What You Should Know',
-    excerpt: 'GLP-1 receptor agonists have transformed medical weight management. Here\'s how they work, who they\'re for, and what to discuss with your doctor.',
-    date: '2026-03-15',
-    category: 'Weight Management',
-    readTime: '7 min read',
-  },
-  {
-    slug: 'metabolic-syndrome-explained',
-    title: 'Metabolic Syndrome: The Cluster of Risk Factors You Should Know About',
-    excerpt: 'Metabolic syndrome affects roughly 1 in 5 Canadian adults and significantly increases cardiovascular risk. Here\'s what it is and what you can do.',
-    date: '2026-03-10',
-    category: 'Lifestyle Medicine',
-    readTime: '5 min read',
-  },
-  {
     slug: 'referring-physicians-guide',
     title: 'A Guide for Referring Physicians: Getting the Most from Your Referral',
     excerpt: 'Tips for Ontario family physicians and NPs on crafting effective specialist referrals — what to include, what to expect back, and how to streamline communication.',
@@ -59,7 +43,7 @@ const posts = [
   },
 ];
 
-const categories = ['All', 'Diabetes', 'Respirology', 'Weight Management', 'Lifestyle Medicine', 'Patient Info', 'For Providers'];
+const categories = ['All', 'Diabetes', 'Respirology', 'Patient Info', 'For Providers'];
 
 export default function BlogPage() {
   return (

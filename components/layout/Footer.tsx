@@ -5,8 +5,6 @@ const footerNav = {
   services: [
     { name: 'Diabetes Care', href: '/services/diabetes' },
     { name: 'Respirology', href: '/services/respirology' },
-    { name: 'Weight Management', href: '/services/weight-management' },
-    { name: 'Lifestyle Medicine', href: '/services/lifestyle-medicine' },
     { name: 'Fee Schedule', href: '/fees' },
   ],
   patients: [
@@ -72,8 +70,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-navy-300 text-sm leading-relaxed mb-6">
-              Virtual specialist care for diabetes, endocrinology, respirology, 
-              weight management, and lifestyle medicine — serving Ontario OHIP patients.
+              Virtual specialist care for diabetes, endocrinology, and respirology — serving
+              Ontario OHIP patients.
             </p>
             <div className="space-y-2 text-sm text-navy-300">
               <a href="tel:+19055550123" className="flex items-center gap-2 hover:text-white transition-colors">

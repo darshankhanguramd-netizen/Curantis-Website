@@ -47,24 +47,6 @@ const privateServices = [
     ],
   },
   {
-    category: 'Weight Management Program',
-    items: [
-      { service: 'Initial Medical Weight Management Assessment (60 min)', fee: '$250' },
-      { service: 'Follow-Up Weight Management Visit (30 min)', fee: '$125' },
-      { service: 'Comprehensive 12-Week Program (physician + dietitian)', fee: '$1,450' },
-      { service: 'GLP-1 RA Medication Monitoring Visit (15 min)', fee: '$75' },
-    ],
-  },
-  {
-    category: 'Lifestyle Medicine & Coaching',
-    items: [
-      { service: 'Lifestyle Medicine Assessment (60 min)', fee: '$200' },
-      { service: 'Behavioural Change Coaching Session (45 min)', fee: '$120' },
-      { service: 'Sleep & Stress Optimization Consultation (45 min)', fee: '$130' },
-      { service: 'Metabolic Health Package (8 sessions)', fee: '$850' },
-    ],
-  },
-  {
     category: 'Administrative & Other',
     items: [
       { service: 'Missed Appointment / No-Show Fee', fee: '$50' },
@@ -82,9 +64,9 @@ export default function FeesPage() {
         <div className="container-wide max-w-3xl">
           <h1>Fee <span className="text-brand-600">Schedule</span></h1>
           <p className="mt-4 text-lg text-navy-600">
-            Specialist physician consultations are covered by OHIP at no cost to patients. 
-            Allied health and lifestyle medicine services are available through private 
-            payment, Health Spending Accounts, or employer benefits.
+            Specialist physician consultations are covered by OHIP at no cost to patients.
+            Allied health services are available through private payment, Health Spending
+            Accounts, or employer benefits.
           </p>
         </div>
       </section>
