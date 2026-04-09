@@ -38,7 +38,7 @@ export default function TermsPage() {
             </p>
             <p>
               <strong>OHIP-Insured Services:</strong> Specialist physician consultations in 
-              Internal Medicine, Endocrinology &amp; Metabolism, and Respirology. These services 
+              Internal Medicine, Endocrinology &amp; Metabolism, Obesity Medicine, and Respirology. These services 
               are billed directly to the Ontario Health Insurance Plan and are provided at no 
               cost to eligible Ontario residents with valid OHIP coverage.
             </p>

@@ -34,8 +34,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     <>
       <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-narrow">
-          <Link href="/blog" className="inline-flex items-center gap-1.5 text-sm text-brand-600 hover:text-brand-800 mb-8">
-            <ArrowLeft className="w-4 h-4" /> Back to Blog
+            <Link href="/resources" className="inline-flex items-center gap-1.5 text-sm text-brand-600 hover:text-brand-800 mb-8">
+            <ArrowLeft className="w-4 h-4" /> Back to Resources
           </Link>
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-medium px-3 py-1 rounded-full mb-4">
             {post.meta.category}
@@ -84,8 +84,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="mt-8">
-            <Link href="/blog" className="btn-secondary text-sm">
-              <ArrowLeft className="w-4 h-4 mr-2" /> All Articles
+            <Link href="/resources" className="btn-secondary text-sm">
+              <ArrowLeft className="w-4 h-4 mr-2" /> All resources
             </Link>
           </div>
         </div>

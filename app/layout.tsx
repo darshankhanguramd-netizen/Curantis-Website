@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     'diabetes care Ontario',
   ],
   authors: [{ name: 'Curantis Specialty Care' }],
+  icons: {
+    icon: [{ url: '/images/brand/curantis-logo.png', type: 'image/png' }],
+    apple: '/images/brand/curantis-logo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_CA',
@@ -32,10 +36,10 @@ export const metadata: Metadata = {
       'Expert diabetes, endocrinology, and respirology care delivered virtually across Ontario.',
     images: [
       {
-        url: '/images/og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Curantis Specialty Care',
+        url: '/images/hero/home-hero.jpg',
+        width: 860,
+        height: 587,
+        alt: 'Patient during a virtual specialist visit from home',
       },
     ],
   },
@@ -44,6 +48,7 @@ export const metadata: Metadata = {
     title: 'Curantis Specialty Care',
     description:
       'Virtual specialist care for Ontario patients. Diabetes, endocrinology, and respirology.',
+    images: ['/images/hero/home-hero.jpg'],
   },
   robots: {
     index: true,
@@ -76,6 +81,8 @@ export default function RootLayout({
               name: 'Curantis Specialty Care',
               description:
                 'Virtual clinic providing diabetes, endocrinology, and respirology care to Ontario OHIP patients.',
+              logo: 'https://curantiscare.ca/images/brand/curantis-logo.png',
+              image: 'https://curantiscare.ca/images/brand/curantis-logo.png',
               url: 'https://curantiscare.ca',
               telephone: '+1-905-555-0123',
               faxNumber: '+1-905-555-0124',
@@ -100,19 +107,29 @@ export default function RootLayout({
                   name: 'Virtual Respirology Consultation',
                 },
               ],
-              physician: {
-                '@type': 'Physician',
-                name: 'Dr. Darshan Singh Khangura',
-                medicalSpecialty: [
-                  'Endocrinology',
-                  'InternalMedicine',
-                ],
-                identifier: {
-                  '@type': 'PropertyValue',
-                  name: 'CPSO',
-                  value: '124706',
+              physician: [
+                {
+                  '@type': 'Physician',
+                  name: 'Dr. Darshan Singh Khangura',
+                  medicalSpecialty: ['Endocrinology', 'InternalMedicine'],
+                  knowsAbout: 'Obesity medicine',
+                  identifier: {
+                    '@type': 'PropertyValue',
+                    name: 'CPSO',
+                    value: '124706',
+                  },
                 },
-              },
+                {
+                  '@type': 'Physician',
+                  name: 'Dr. Namratta Kaur Ghatehorde',
+                  medicalSpecialty: ['InternalMedicine', 'RespiratoryTherapy'],
+                  identifier: {
+                    '@type': 'PropertyValue',
+                    name: 'CPSO',
+                    value: '124983',
+                  },
+                },
+              ],
             }),
           }}
         />

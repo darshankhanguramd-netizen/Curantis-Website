@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const footerNav = {
     { name: 'How It Works', href: '/how-it-works' },
     { name: 'For Patients', href: '/for-patients' },
     { name: 'For Providers', href: '/for-providers' },
-    { name: 'Blog & Resources', href: '/blog' },
+    { name: 'Resources', href: '/resources' },
   ],
   clinic: [
     { name: 'About Us', href: '/about' },
@@ -58,17 +59,17 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-display text-xl">C</span>
-              </div>
-              <div>
-                <p className="font-display text-xl leading-none">Curantis</p>
-                <p className="text-2xs uppercase tracking-[0.2em] text-brand-400 font-medium">
-                  Specialty Care
-                </p>
-              </div>
-            </div>
+            <Link href="/" className="inline-block mb-4 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <span className="inline-block rounded-xl bg-white p-2.5 shadow-sm ring-1 ring-white/10">
+                <Image
+                  src="/images/brand/curantis-logo.png"
+                  alt="Curantis Specialty Care"
+                  width={200}
+                  height={72}
+                  className="h-9 w-auto object-contain object-left"
+                />
+              </span>
+            </Link>
             <p className="text-navy-300 text-sm leading-relaxed mb-6">
               Virtual specialist care for diabetes, endocrinology, and respirology — serving
               Ontario OHIP patients.
@@ -159,7 +160,7 @@ export default function Footer() {
                 © {currentYear} Darshan Khangura Medicine Professional Corporation, operating as Curantis Specialty Care.
               </p>
               <p>
-                Dr. Darshan Singh Khangura, MD — Internal Medicine, Endocrinology &amp; Metabolism |{' '}
+                Dr. Darshan Singh Khangura, MD — Internal Medicine, Endocrinology &amp; Metabolism, Obesity Medicine |{' '}
                 <a
                   href="https://register.cpso.on.ca/physician-info/?cpsonum=124706"
                   target="_blank"

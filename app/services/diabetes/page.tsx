@@ -37,9 +37,9 @@ export default function DiabetesPage() {
           <h2 className="mb-12">Conditions We Treat</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Type 1 Diabetes', desc: 'Insulin optimization, pump management, CGM interpretation, and acute complication prevention.' },
+              { title: 'Type 1 Diabetes', desc: 'Insulin optimization, CGM interpretation, and acute complication prevention.' },
               { title: 'Type 2 Diabetes', desc: 'Medication titration, A1C reduction strategies, and cardiovascular risk management.' },
-              { title: 'Insulin Management', desc: 'Basal-bolus optimization, sliding scale transitions, and insulin pump assessment.' },
+              { title: 'Insulin Management', desc: 'Basal-bolus optimization and sliding scale transitions.' },
               { title: 'Complex Diabetes', desc: 'Multi-drug regimens, recurrent DKA, renal dosing adjustments, and steroid-induced diabetes.' },
               { title: 'Hypoglycemia', desc: 'Assessment of recurrent hypoglycemia, medication adjustment, and self-management education.' },
               { title: 'Pre-Diabetes', desc: 'Risk stratification, lifestyle intervention, and pharmacologic prevention strategies.' },
@@ -77,10 +77,10 @@ export default function DiabetesPage() {
             <h2 className="mb-6">What to Expect</h2>
             <ul className="space-y-3">
               {[
-                'Initial consultation: 30–45 minutes by secure video',
-                'Pre-visit intake including recent labs and glucose data',
+                'Initial consultation: 20–30 minutes by secure video',
+                'Follow-up visits: typically about 15 minutes by secure video (as clinically needed)',
                 'Detailed care plan shared with your referring physician',
-                'Follow-up visits for ongoing management as needed',
+                'When labs or imaging are ordered, requisitions are emailed to you',
                 'Allied health referrals (dietitian, CDE) when appropriate',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">

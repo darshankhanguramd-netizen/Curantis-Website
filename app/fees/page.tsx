@@ -8,14 +8,12 @@ export const metadata: Metadata = {
 };
 
 const ohipServices = [
-  { service: 'Initial Specialist Consultation — Endocrinology', fee: 'OHIP', code: 'A415' },
-  { service: 'Follow-Up Consultation — Endocrinology', fee: 'OHIP', code: 'A416' },
-  { service: 'Initial Specialist Consultation — Internal Medicine', fee: 'OHIP', code: 'A415' },
-  { service: 'Follow-Up Consultation — Internal Medicine', fee: 'OHIP', code: 'A416' },
-  { service: 'Initial Specialist Consultation — Respirology', fee: 'OHIP', code: 'A415' },
-  { service: 'Follow-Up Consultation — Respirology', fee: 'OHIP', code: 'A416' },
-  { service: 'Complex Diabetes Management (extended consult)', fee: 'OHIP', code: 'K730' },
-  { service: 'Telemedicine Premium (video consultation)', fee: 'OHIP', code: 'K083' },
+  { service: 'Initial Specialist Consultation — Endocrinology', fee: 'OHIP' },
+  { service: 'Follow-Up Consultation — Endocrinology', fee: 'OHIP' },
+  { service: 'Initial Specialist Consultation — Respirology', fee: 'OHIP' },
+  { service: 'Follow-Up Consultation — Respirology', fee: 'OHIP' },
+  { service: 'Complex Diabetes Management (extended consult)', fee: 'OHIP' },
+  { service: 'Telemedicine Premium (video consultation)', fee: 'OHIP' },
 ];
 
 const privateServices = [
@@ -89,16 +87,14 @@ export default function FeesPage() {
               <thead>
                 <tr className="border-b-2 border-navy-200">
                   <th className="py-3 pr-4 text-sm font-semibold text-navy-900">Service</th>
-                  <th className="py-3 pr-4 text-sm font-semibold text-navy-900 text-right">Fee</th>
-                  <th className="py-3 text-sm font-semibold text-navy-900 text-right">Billing Code</th>
+                  <th className="py-3 text-sm font-semibold text-navy-900 text-right">Fee</th>
                 </tr>
               </thead>
               <tbody>
                 {ohipServices.map((s, i) => (
                   <tr key={i} className="border-b border-navy-100">
                     <td className="py-3 pr-4 text-sm text-navy-700">{s.service}</td>
-                    <td className="py-3 pr-4 text-sm text-brand-600 font-medium text-right">{s.fee}</td>
-                    <td className="py-3 text-sm text-navy-500 text-right font-mono">{s.code}</td>
+                    <td className="py-3 text-sm text-brand-600 font-medium text-right">{s.fee}</td>
                   </tr>
                 ))}
               </tbody>
@@ -116,10 +112,15 @@ export default function FeesPage() {
           </div>
           <div className="bg-warm-50 border border-warm-200 rounded-xl p-5 mb-8">
             <p className="text-sm text-warm-800">
-              The following services are <strong>not covered by OHIP</strong>. Payment is accepted 
-              via credit card, debit, e-transfer, or direct Health Spending Account (HSA) billing. 
-              Many employer extended health plans cover dietitian, diabetes education, and respiratory 
+              The following services are <strong>not covered by OHIP</strong>. Payment is accepted
+              via credit card, debit, e-transfer, or direct Health Spending Account (HSA) billing.
+              Many employer extended health plans cover dietitian, diabetes education, and respiratory
               therapy services — check with your benefits provider. Tax-eligible receipts are provided.
+            </p>
+            <p className="text-sm text-warm-800 mt-3">
+              <strong>Note:</strong> Private allied health fees shown are estimates for planning
+              purposes only. Final fees may vary — please contact us to confirm current pricing before
+              booking.
             </p>
           </div>
 

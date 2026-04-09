@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Target, Eye, Heart, Lightbulb, CheckCircle2 } from 'lucide-react';
 
@@ -19,9 +20,9 @@ export default function AboutPage() {
               <span className="text-brand-600">Better Care</span>
             </h1>
             <p className="mt-6 text-xl text-navy-600">
-              Curantis Specialty Care was founded on a simple premise: geography should 
-              not determine the quality of specialist care you receive. We use virtual 
-              delivery to connect Ontario patients with experienced subspecialists — 
+              Curantis Specialty Care was founded on a simple premise: geography should
+              not determine the quality of specialist care you receive. We use virtual
+              delivery to connect Ontario patients with experienced subspecialists —
               faster and closer to home.
             </p>
           </div>
@@ -37,8 +38,8 @@ export default function AboutPage() {
                 <h3 className="text-2xl">Our Mission</h3>
               </div>
               <p>
-                To improve access to high-quality specialist care — particularly in diabetes, 
-                endocrinology, and metabolic health — by removing the barriers of distance, 
+                To improve access to high-quality specialist care — particularly in diabetes,
+                endocrinology, and metabolic health — by removing the barriers of distance,
                 wait times, and fragmented communication between providers.
               </p>
             </div>
@@ -48,8 +49,8 @@ export default function AboutPage() {
                 <h3 className="text-2xl">Our Vision</h3>
               </div>
               <p>
-                A healthcare system where every Ontarian — whether in downtown Toronto or 
-                rural Northern Ontario — can access timely, coordinated, specialist-led care 
+                A healthcare system where every Ontarian — whether in downtown Toronto or
+                rural Northern Ontario — can access timely, coordinated, specialist-led care
                 without unnecessary travel or delay.
               </p>
             </div>
@@ -96,27 +97,85 @@ export default function AboutPage() {
       </section>
 
       <section className="section-padding bg-white">
-        <div className="container-wide max-w-3xl mx-auto">
-          <h2 className="mb-8">About Dr. Khangura</h2>
-          <p className="mb-4">
-            Dr. Darshan Singh Khangura is a specialist in Internal Medicine and 
-            Endocrinology &amp; Metabolism, registered with the College of Physicians 
-            and Surgeons of Ontario (CPSO# 124706). He completed his medical training 
-            at Saba University School of Medicine and holds certifications from the CPSO 
-            in both Internal Medicine and Endocrinology.
-          </p>
-          <p className="mb-4">
-            Dr. Khangura founded Curantis Specialty Care to address the chronic access 
-            gaps he observed in Ontario&rsquo;s specialist care landscape — particularly 
-            for patients managing complex diabetes and metabolic conditions who face long 
-            waits and long drives for appointments.
-          </p>
-          <p>
-            Through Curantis, he combines clinical expertise with virtual care delivery 
-            to serve patients across the province, with a particular commitment to 
-            underserved and rural communities.
-          </p>
-          <div className="mt-8">
+        <div className="container-wide max-w-4xl mx-auto space-y-16">
+          <div>
+            <h2 className="mb-8">About Dr. Khangura</h2>
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div className="relative aspect-[3/4] w-full max-w-xs mx-auto md:mx-0 rounded-2xl overflow-hidden bg-navy-100 shadow-soft">
+                <Image
+                  src="/images/team/dr-khangura.png"
+                  alt="Dr. Darshan Singh Khangura"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 280px, 320px"
+                />
+              </div>
+              <div className="md:col-span-2 space-y-4">
+                <p>
+                  Dr. Darshan Singh Khangura is a co-founder of Curantis Specialty Care and a
+                  specialist in Internal Medicine, Endocrinology &amp; Metabolism, and Obesity
+                  Medicine, registered with the College of Physicians and Surgeons of Ontario
+                  (CPSO# 124706). He completed his medical training at the University of
+                  Missouri-Columbia.
+                </p>
+                <p>
+                  Together with Dr. Ghatehorde, he built Curantis to address chronic access gaps
+                  in Ontario&rsquo;s specialist care landscape — particularly for patients managing
+                  complex diabetes and metabolic conditions who face long waits and long drives for
+                  appointments.
+                </p>
+                <p>
+                  Through Curantis, he combines clinical expertise with virtual care delivery to
+                  serve patients across the province, with a particular commitment to underserved
+                  and rural communities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-12 border-t border-navy-100">
+            <h2 className="mb-8">About Dr. Ghatehorde</h2>
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div className="relative aspect-[3/4] w-full max-w-xs mx-auto md:mx-0 rounded-2xl overflow-hidden bg-navy-100 shadow-soft">
+                <Image
+                  src="/images/team/dr-ghatehorde.png"
+                  alt="Dr. Namratta Kaur Ghatehorde"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 280px, 320px"
+                />
+              </div>
+              <div className="md:col-span-2 space-y-4">
+                <p>
+                  Dr. Namratta Kaur Ghatehorde is a co-founder of Curantis Specialty Care and a
+                  respirologist with certification in Internal Medicine and Respirology (CPSO#
+                  124983). She completed her medical training at the University of
+                  Missouri-Columbia.
+                </p>
+                <p>
+                  She leads the clinic&rsquo;s respiratory medicine program, providing virtual
+                  assessment and management of conditions such as asthma, COPD, chronic cough,
+                  and related disorders — with the same focus on timely, clear handoffs to
+                  referring physicians.
+                </p>
+                <p>
+                  Dr. Ghatehorde offers consultations in English and Punjabi. Her public
+                  register profile is available through the{' '}
+                  <a
+                    href="https://register.cpso.on.ca/physician-info/?cpsonum=124983"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-600 hover:text-brand-800 font-medium"
+                  >
+                    College of Physicians and Surgeons of Ontario
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-4">
             <Link href="/team" className="btn-primary">
               Meet the Full Team
             </Link>

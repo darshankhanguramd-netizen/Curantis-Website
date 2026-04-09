@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -10,24 +11,61 @@ import {
   Users,
   FileText,
   Phone,
+  Printer,
+  FileDown,
+  ClipboardPenLine,
 } from 'lucide-react';
 
 export default function HomePage() {
   return (
     <>
       {/* ─── Hero ─── */}
-      <section className="relative bg-gradient-to-b from-brand-50/50 to-white section-padding overflow-hidden">
-        <div className="container-wide">
+      <section className="relative bg-gradient-to-b from-brand-50/50 to-white overflow-hidden">
+        <div className="border-b border-navy-100/80 bg-white/90 backdrop-blur-sm">
+          <div className="container-wide py-3.5 md:py-4 flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8">
+            <p className="text-xs font-semibold uppercase tracking-wider text-navy-500 shrink-0">
+              For referring physicians
+            </p>
+            <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-x-8 sm:gap-y-2 text-sm text-navy-700">
+              <li className="flex items-center gap-2">
+                <Printer className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
+                <span>
+                  Fax:{' '}
+                  <a
+                    href="fax:+19055550124"
+                    className="font-medium text-navy-900 hover:text-brand-700 underline-offset-2 hover:underline"
+                  >
+                    (905) 555-0124
+                  </a>
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FileDown className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
+                <a
+                  href="/documents/curantis-referral-form.pdf"
+                  download
+                  className="font-medium text-brand-700 hover:text-brand-800 underline-offset-2 hover:underline"
+                >
+                  Download referral form (PDF)
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <ClipboardPenLine className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
+                <Link
+                  href="/refer#online-form"
+                  className="font-medium text-brand-700 hover:text-brand-800 underline-offset-2 hover:underline"
+                >
+                  Complete referral online
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="container-wide pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-xl">
-              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
-                <Shield className="w-4 h-4" />
-                OHIP-Covered Specialist Care
-              </div>
-              <h1 className="text-balance">
-                Specialist Care.{' '}
-                <span className="text-brand-600">Without the Wait.</span>{' '}
-                Without the Travel.
+              <h1 className="text-balance text-4xl md:text-5xl font-display">
+                Exceptional specialty care that meets you where you are.
               </h1>
               <p className="mt-6 text-lg md:text-xl text-navy-600 leading-relaxed">
                 A virtual clinic focused on expert diabetes and endocrinology care, plus
@@ -48,7 +86,7 @@ export default function HomePage() {
                   Shorter wait times
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-brand-500" />
+                  <MapPin className="w-4 h-4 text-brand-500 shrink-0" />
                   No travel required
                 </span>
                 <span className="flex items-center gap-1.5">
@@ -57,19 +95,19 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-brand-100 to-sage-100 flex items-center justify-center">
-                <p className="text-navy-400 text-sm">[Hero image: Patient in comfortable home setting on virtual consultation]</p>
-              </div>
-              {/* Trust badge overlay */}
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-soft-lg p-4 flex items-center gap-3">
-                <div className="w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center">
-                  <Stethoscope className="w-5 h-5 text-brand-600" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-navy-900">CPSO Registered</p>
-                  <p className="text-xs text-navy-500">Board-certified specialist</p>
-                </div>
+            <div>
+              <p className="text-2xs uppercase tracking-[0.18em] text-navy-500 font-medium mb-3">
+                Professional clinical workspace
+              </p>
+              <div className="relative aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
+                <Image
+                  src="/images/hero/home-hero.jpg"
+                  alt="Patient smiling and waving during a secure video visit on a laptop from home"
+                  fill
+                  className="object-cover object-[center_22%]"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -77,7 +115,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Why Our Clinic ─── */}
-      <section className="section-padding bg-white">
+      <section className="bg-white pt-8 md:pt-10 lg:pt-12 pb-16 md:pb-24 lg:pb-32">
         <div className="container-wide">
           <div className="max-w-2xl mx-auto text-center mb-16">
             <h2>
@@ -193,8 +231,9 @@ export default function HomePage() {
               },
               {
                 step: '02',
-                title: 'Intake & Review',
-                description: 'We collect relevant history, lab work, and glucose/respiratory data before your visit.',
+                title: 'Scheduling & preparation',
+                description:
+                  'We schedule your visit and may remind you to have recent labs, imaging, or device data ready to review.',
               },
               {
                 step: '03',
@@ -204,7 +243,8 @@ export default function HomePage() {
               {
                 step: '04',
                 title: 'Care Plan & Follow-Up',
-                description: 'Your referring physician receives a detailed consult note. Ongoing virtual follow-ups as needed.',
+                description:
+                  'Your referring physician receives a detailed consult note. When labs or imaging are ordered, requisitions are emailed to you. Ongoing virtual follow-ups as needed.',
               },
             ].map((item, i) => (
               <div key={i} className="relative">
@@ -278,13 +318,16 @@ export default function HomePage() {
                 <span className="text-brand-600">Evidence-Based</span>
               </h2>
               <p className="mt-4">
-                Curantis Specialty Care is led by Dr. Darshan Singh Khangura, a board-certified 
-                specialist in Internal Medicine and Endocrinology &amp; Metabolism, registered with 
-                the College of Physicians and Surgeons of Ontario.
+                Curantis Specialty Care is co-founded by Dr. Darshan Singh Khangura — a
+                board-certified specialist in Internal Medicine, Endocrinology and Metabolism,
+                and Obesity Medicine — and Dr. Namratta Kaur Ghatehorde, a respirologist with
+                certification in Internal Medicine and Respirology. Both are CPSO-registered.
+                Together they deliver virtual diabetes, endocrine, and respiratory care across
+                Ontario.
               </p>
               <ul className="mt-8 space-y-4">
                 {[
-                  'CPSO-registered and regulated physician',
+                  'CPSO-registered specialist physicians',
                   'OHIP-billed specialist consultations — no cost to patients',
                   'PHIPA-compliant virtual care platform',
                   'Clear consult notes back to referring physicians',
@@ -298,12 +341,29 @@ export default function HomePage() {
               </ul>
               <div className="mt-8">
                 <Link href="/team" className="btn-secondary">
-                  Meet Dr. Khangura
+                  Meet our physicians
                 </Link>
               </div>
             </div>
-            <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-navy-50 to-brand-50 flex items-center justify-center">
-              <p className="text-navy-400 text-sm">[Image: Professional headshot or clinical environment]</p>
+            <div className="grid grid-cols-2 gap-4 w-full">
+              <div className="relative aspect-[3/4] w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
+                <Image
+                  src="/images/team/dr-khangura.png"
+                  alt="Dr. Darshan Singh Khangura, co-founder and Medical Director"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 45vw, 25rem"
+                />
+              </div>
+              <div className="relative aspect-[3/4] w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
+                <Image
+                  src="/images/team/dr-ghatehorde.png"
+                  alt="Dr. Namratta Kaur Ghatehorde, co-founder and respirologist"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 45vw, 25rem"
+                />
+              </div>
             </div>
           </div>
         </div>

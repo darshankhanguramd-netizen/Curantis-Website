@@ -27,21 +27,21 @@ const steps = [
     step: '03',
     title: 'Virtual Consultation',
     description: 'Meet with your specialist by secure video. This is a real clinical consultation — your specialist reviews your data, discusses your health concerns, and works with you to develop a plan.',
-    detail: 'Initial consultations are typically 30–45 minutes. All you need is a device with a camera, a microphone, and a stable internet connection. A private, quiet space is recommended.',
+    detail: 'Initial consultations are typically 20–30 minutes. All you need is a device with a camera, a microphone, and a stable internet connection. A private, quiet space is recommended.',
   },
   {
     icon: Heart,
     step: '04',
     title: 'Care Plan & Communication',
     description: 'Your specialist develops a detailed care plan including medication changes, lifestyle recommendations, and any further investigations. A clear consult note is sent to your referring physician.',
-    detail: 'Prescriptions (if needed) are sent electronically to your pharmacy. Your family doctor receives a full summary so there are no gaps in communication.',
+    detail: 'Prescriptions (if needed) are sent electronically to your pharmacy. Additional requisitions (labs and imaging) will be emailed to you directly. Your family doctor receives a full summary so there are no gaps in communication.',
   },
   {
     icon: RefreshCw,
     step: '05',
     title: 'Ongoing Follow-Up',
     description: 'For chronic conditions, follow-up appointments are scheduled as clinically appropriate — all virtual, all from home. Allied health services (dietitian, CDE, respiratory therapy) are available when needed.',
-    detail: 'Follow-ups are typically 15–20 minutes. When your condition is stable and goals are met, you\'ll be transitioned back to your family physician with a discharge summary.',
+    detail: 'Follow-ups are typically 15 minutes. When your condition is stable and goals are met, you\'ll be transitioned back to your family physician with a discharge summary.',
   },
 ];
 

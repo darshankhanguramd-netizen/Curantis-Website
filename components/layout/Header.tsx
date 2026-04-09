@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 
@@ -18,7 +19,7 @@ const navigation = [
   { name: 'For Patients', href: '/for-patients' },
   { name: 'For Providers', href: '/for-providers' },
   { name: 'Team', href: '/team' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Resources', href: '/resources' },
   { name: 'Fees', href: '/fees' },
 ];
 
@@ -48,18 +49,18 @@ export default function Header() {
       <nav className="container-wide" aria-label="Primary navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-display text-xl">C</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-xl text-navy-900 leading-none">
-                Curantis
-              </span>
-              <span className="text-2xs uppercase tracking-[0.2em] text-brand-600 font-medium">
-                Specialty Care
-              </span>
-            </div>
+          <Link
+            href="/"
+            className="flex items-center shrink-0 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+          >
+            <Image
+              src="/images/brand/curantis-logo.png"
+              alt="Curantis Specialty Care"
+              width={200}
+              height={72}
+              className="h-11 w-auto lg:h-[3.25rem] object-contain object-left"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

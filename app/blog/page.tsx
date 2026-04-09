@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { ArrowRight, Calendar } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog & Resources',
-  description: 'Health articles, patient education, and clinical insights from Curantis Specialty Care.',
+  title: 'Resources',
+  description: 'Patient education and clinical resources from Curantis Specialty Care.',
 };
 
 // In production, this would come from MDX file frontmatter via fs/gray-matter
@@ -50,9 +50,11 @@ export default function BlogPage() {
     <>
       <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
-          <h1>Blog &amp; <span className="text-brand-600">Resources</span></h1>
+          <h1>
+            <span className="text-brand-600">Resources</span>
+          </h1>
           <p className="mt-4 text-lg text-navy-600">
-            Health education, clinical insights, and practical advice from our specialist team.
+            Health education and practical articles from our specialist team — more content coming soon.
           </p>
         </div>
       </section>
@@ -90,7 +92,7 @@ export default function BlogPage() {
                     <span className="text-xs text-navy-400">{post.readTime}</span>
                   </div>
                   <h3 className="font-display text-lg mb-2 group-hover:text-brand-600 transition-colors leading-snug">
-                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                    <Link href={`/resources/${post.slug}`}>{post.title}</Link>
                   </h3>
                   <p className="text-sm text-navy-600 mb-4 line-clamp-2">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
@@ -98,7 +100,7 @@ export default function BlogPage() {
                       <Calendar className="w-3 h-3" />
                       {new Date(post.date).toLocaleDateString('en-CA', { month: 'short', day: 'numeric', year: 'numeric' })}
                     </span>
-                    <Link href={`/blog/${post.slug}`} className="text-sm font-medium text-brand-600 hover:text-brand-800 inline-flex items-center gap-1">
+                    <Link href={`/resources/${post.slug}`} className="text-sm font-medium text-brand-600 hover:text-brand-800 inline-flex items-center gap-1">
                       Read <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>

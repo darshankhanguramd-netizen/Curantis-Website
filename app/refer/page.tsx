@@ -239,10 +239,8 @@ export default function ReferPage() {
                       value={formData.serviceRequested} onChange={handleChange}
                       className="w-full px-4 py-2.5 border border-navy-200 rounded-xl text-navy-900 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors cursor-pointer">
                       <option value="">Select a service</option>
-                      <option value="diabetes">Diabetes Care (OHIP)</option>
                       <option value="endocrinology">Endocrinology (OHIP)</option>
                       <option value="respirology">Respirology (OHIP)</option>
-                      <option value="internal-medicine">Internal Medicine (OHIP)</option>
                     </select>
                   </div>
                   <div>

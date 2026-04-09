@@ -70,8 +70,8 @@ export default function ForPatientsPage() {
           <div className="space-y-6">
             {[
               { q: 'Before your visit', a: 'Our team will contact you to schedule your appointment and let you know what to have ready — medication list, recent lab results, glucose data, and your OHIP card.' },
-              { q: 'During your visit', a: 'You\'ll meet with your specialist by secure video for 30–45 minutes. They\'ll review your health information, ask questions, discuss findings, and build a care plan with you.' },
-              { q: 'After your visit', a: 'Your specialist sends a detailed summary and care plan to your family doctor. Prescriptions (if needed) go to your pharmacy electronically. Follow-up visits are scheduled as needed.' },
+              { q: 'During your visit', a: 'You\'ll meet with your specialist by secure video for 20–30 minutes. They\'ll review your health information, ask questions, discuss findings, and build a care plan with you.' },
+              { q: 'After your visit', a: 'Your specialist sends a detailed summary and care plan to your family doctor. Prescriptions (if needed) go to your pharmacy electronically. Additional requisitions (labs and imaging) will be emailed to you directly. Follow-up visits are scheduled as needed.' },
               { q: 'Allied health services', a: 'If recommended, you can access dietitian, diabetes educator, or respiratory therapy sessions. These are private-pay services — fees are on our Fee Schedule page.' },
             ].map((item, i) => (
               <div key={i} className="card p-6">

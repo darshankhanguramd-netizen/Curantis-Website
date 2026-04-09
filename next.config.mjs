@@ -6,6 +6,12 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  async rewrites() {
+    return [
+      { source: '/resources', destination: '/blog' },
+      { source: '/resources/:path*', destination: '/blog/:path*' },
+    ];
+  },
 };
 
 const withMDX = createMDX({

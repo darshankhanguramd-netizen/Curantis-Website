@@ -87,6 +87,18 @@ export default function ForProvidersPage() {
                 </a>
               </div>
             </div>
+            <div className="card p-6 flex gap-6 items-start">
+              <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
+                <FileText className="w-5 h-5 text-brand-600" />
+              </div>
+              <div>
+                <h4 className="font-display text-lg mb-1">Option 3: Your Own Referral Form</h4>
+                <p className="text-sm text-navy-600 mb-3">
+                  Use any blank referral form of your choosing. Please ensure the details in
+                  the section below are included in your referral to avoid delays.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

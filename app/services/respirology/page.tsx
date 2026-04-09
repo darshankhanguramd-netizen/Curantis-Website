@@ -78,11 +78,11 @@ export default function RespirologPage() {
             <h2 className="mb-6">What to Expect</h2>
             <ul className="space-y-3">
               {[
-                'Initial consultation: 30–45 minutes by secure video',
-                'Pre-visit intake including PFTs and imaging if available',
+                'Initial consultation: 20–30 minutes by secure video',
+                'Follow-up visits: typically about 15 minutes by secure video (as clinically needed)',
                 'Medication review and inhaler technique assessment',
                 'Detailed consult note and care plan to referring physician',
-                'Follow-up appointments for ongoing management',
+                'When labs or imaging are ordered, requisitions are emailed to you',
                 'Respiratory therapy referrals when appropriate',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
