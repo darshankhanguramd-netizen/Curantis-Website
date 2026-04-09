@@ -33,22 +33,22 @@ export default function Footer() {
   return (
     <footer className="bg-navy-900 text-white" role="contentinfo">
       {/* CTA Banner */}
-      <div className="bg-brand-600">
+      <div className="bg-navy-800">
         <div className="container-wide py-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-white text-2xl md:text-3xl">
               Ready to refer a patient?
             </h3>
             <p className="text-brand-100 mt-2 text-lg">
-              Online referral form or downloadable PDF — your choice.
+              Download our PDF referral form and fax it to our office.
             </p>
           </div>
-          <div className="flex gap-3">
-            <Link href="/refer" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
-              Refer Online
+          <div className="flex flex-wrap gap-3">
+            <Link href="/refer#download" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
+              Download referral form
             </Link>
-            <Link href="/refer#download" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-700 transition-colors">
-              Download Form
+            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-navy-900/80 transition-colors">
+              Fax &amp; instructions
             </Link>
           </div>
         </div>

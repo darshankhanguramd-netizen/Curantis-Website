@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { FileText, Clock, CheckCircle2, ArrowRight, Download, Send } from 'lucide-react';
+import { FileText, Clock, CheckCircle2, ArrowRight, Download } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'For Providers',
@@ -18,12 +18,12 @@ export default function ForProvidersPage() {
               Fast, reliable virtual specialist access for your patients. Clear communication. 
               Detailed consult notes. No access bonuses impacted.
             </p>
-            <div className="mt-8 flex gap-4">
-              <Link href="/refer" className="btn-primary">
-                <Send className="w-4 h-4 mr-2" /> Refer Online
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link href="/refer#download" className="btn-primary">
+                <Download className="w-4 h-4 mr-2" /> Download referral form
               </Link>
-              <Link href="/refer#download" className="btn-outline">
-                <Download className="w-4 h-4 mr-2" /> Download Form
+              <Link href="/refer" className="btn-outline">
+                Fax details &amp; instructions
               </Link>
             </div>
           </div>
@@ -58,33 +58,18 @@ export default function ForProvidersPage() {
           <div className="space-y-6">
             <div className="card p-6 flex gap-6 items-start">
               <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                <Send className="w-5 h-5 text-brand-600" />
-              </div>
-              <div>
-                <h4 className="font-display text-lg mb-1">Option 1: Online Referral Form</h4>
-                <p className="text-sm text-navy-600 mb-3">
-                  Complete our secure online form with patient demographics, clinical question, 
-                  history, medications, and recent labs. Requires your CPSO number and OHIP 
-                  billing number.
-                </p>
-                <Link href="/refer" className="text-brand-600 hover:text-brand-800 text-sm font-medium inline-flex items-center gap-1">
-                  Go to Online Form <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
-            </div>
-            <div className="card p-6 flex gap-6 items-start">
-              <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
                 <Download className="w-5 h-5 text-brand-600" />
               </div>
               <div>
-                <h4 className="font-display text-lg mb-1">Option 2: Download &amp; Fax</h4>
+                <h4 className="font-display text-lg mb-1">Option 1: Download &amp; Fax</h4>
                 <p className="text-sm text-navy-600 mb-3">
-                  Download our referral form (PDF), complete it, sign, and fax to 
-                  <strong> (905) 555-0124</strong>. Same information as the online form.
+                  Download our referral form (PDF), complete it, sign, and fax to
+                  <strong> (905) 555-0124</strong>. Include patient demographics, clinical question,
+                  history, medications, recent labs, your CPSO number, and OHIP billing number.
                 </p>
-                <a href="/documents/curantis-referral-form.pdf" download className="text-brand-600 hover:text-brand-800 text-sm font-medium inline-flex items-center gap-1">
-                  Download PDF <ArrowRight className="w-3.5 h-3.5" />
-                </a>
+                <Link href="/refer#download" className="text-brand-600 hover:text-brand-800 text-sm font-medium inline-flex items-center gap-1">
+                  Referral form &amp; fax details <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
             </div>
             <div className="card p-6 flex gap-6 items-start">
@@ -92,7 +77,7 @@ export default function ForProvidersPage() {
                 <FileText className="w-5 h-5 text-brand-600" />
               </div>
               <div>
-                <h4 className="font-display text-lg mb-1">Option 3: Your Own Referral Form</h4>
+                <h4 className="font-display text-lg mb-1">Option 2: Your Own Referral Form</h4>
                 <p className="text-sm text-navy-600 mb-3">
                   Use any blank referral form of your choosing. Please ensure the details in
                   the section below are included in your referral to avoid delays.
@@ -152,14 +137,15 @@ export default function ForProvidersPage() {
         <div className="container-wide text-center max-w-2xl mx-auto">
           <h2 className="text-white text-3xl">Ready to Refer?</h2>
           <p className="mt-4 text-brand-100 text-lg">
-            Online form takes under 5 minutes. Or download the PDF and fax it over.
+            Download the PDF referral form, complete it, and fax it to our office.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Link href="/refer" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
-              Refer Online
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/refer#download" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors inline-flex items-center gap-2">
+              <Download className="w-4 h-4" />
+              Download referral form
             </Link>
-            <Link href="/refer#download" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-700 transition-colors">
-              Download Form
+            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-700 transition-colors">
+              Referral instructions
             </Link>
           </div>
         </div>

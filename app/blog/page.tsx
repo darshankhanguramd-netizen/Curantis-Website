@@ -81,7 +81,7 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
               <article key={post.slug} className="card-elevated overflow-hidden group">
-                <div className="aspect-[16/9] bg-gradient-to-br from-brand-50 to-sage-50 flex items-center justify-center">
+                <div className="aspect-[16/9] bg-gradient-to-br from-brand-50 to-navy-50 flex items-center justify-center">
                   <p className="text-navy-400 text-xs">[Article image]</p>
                 </div>
                 <div className="p-6">

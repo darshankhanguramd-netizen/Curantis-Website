@@ -12,7 +12,7 @@ const steps = [
     icon: FileText,
     step: '01',
     title: 'Physician Referral',
-    description: 'Your family doctor or nurse practitioner submits a referral through our online form or by fax. The referral includes your clinical question, relevant history, current medications, and recent lab results.',
+    description: 'Your family doctor or nurse practitioner sends a referral by fax using our PDF form (or their own form with the same details). The referral includes your clinical question, relevant history, current medications, and recent lab results.',
     detail: 'We accept referrals from any Ontario-licensed physician or NP. Referrals are typically reviewed within 2–3 business days. Urgent referrals are triaged within 24 hours.',
   },
   {

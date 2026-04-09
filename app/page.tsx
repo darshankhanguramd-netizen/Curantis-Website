@@ -52,10 +52,10 @@ export default function HomePage() {
               <li className="flex items-center gap-2">
                 <ClipboardPenLine className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
                 <Link
-                  href="/refer#online-form"
+                  href="/refer#download"
                   className="font-medium text-brand-700 hover:text-brand-800 underline-offset-2 hover:underline"
                 >
-                  Complete referral online
+                  Referral form &amp; fax details
                 </Link>
               </li>
             </ul>
@@ -227,7 +227,7 @@ export default function HomePage() {
               {
                 step: '01',
                 title: 'Physician Referral',
-                description: 'Your family doctor or NP sends a referral via our online form or fax.',
+                description: 'Your family doctor or NP sends a referral by fax using our PDF form or their own referral with the required details.',
               },
               {
                 step: '02',

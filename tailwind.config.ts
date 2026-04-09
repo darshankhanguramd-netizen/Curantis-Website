@@ -10,19 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Curantis Primary Palette
+        // Curantis primary = same family as Who We Serve (navy-900); replaces former green
         brand: {
-          50: '#f0f9f6',
-          100: '#d9f0e8',
-          200: '#b3e1d1',
-          300: '#80ccb3',
-          400: '#4db392',
-          500: '#2a9d72',   // Primary green — trust, health, growth
-          600: '#1f7d5a',
-          700: '#1a6349',
-          800: '#164f3b',
-          900: '#123d2f',
-          950: '#0a2319',
+          50: '#f2f5f9',
+          100: '#e1e7f0',
+          200: '#c5d0e3',
+          300: '#9bb0cf',
+          400: '#6e8bb6',
+          500: '#4d6d9e',
+          600: '#1e2a40', // solid CTAs — matches navy-900 / Who We Serve background
+          700: '#141c2d', // hover
+          800: '#101824', // active / pressed
+          900: '#0d131c',
+          950: '#0a0f16',
         },
         navy: {
           50: '#f2f5f9',
