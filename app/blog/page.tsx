@@ -68,7 +68,7 @@ export default function BlogPage() {
                 key={cat}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer ${
                   i === 0
-                    ? 'bg-brand-600 text-white'
+                    ? 'bg-navy-900 text-white'
                     : 'bg-navy-50 text-navy-600 hover:bg-brand-50 hover:text-brand-600'
                 }`}
               >
@@ -81,7 +81,7 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
               <article key={post.slug} className="card-elevated overflow-hidden group">
-                <div className="aspect-[16/9] bg-gradient-to-br from-brand-50 to-navy-50 flex items-center justify-center">
+                <div className="aspect-[16/9] bg-gradient-to-br from-brand-50 to-sage-50 flex items-center justify-center">
                   <p className="text-navy-400 text-xs">[Article image]</p>
                 </div>
                 <div className="p-6">

@@ -72,7 +72,7 @@ export default function ForPatientsPage() {
               { q: 'Before your visit', a: 'Our team will contact you to schedule your appointment and let you know what to have ready — medication list, recent lab results, glucose data, and your OHIP card.' },
               { q: 'During your visit', a: 'You\'ll meet with your specialist by secure video for 20–30 minutes. They\'ll review your health information, ask questions, discuss findings, and build a care plan with you.' },
               { q: 'After your visit', a: 'Your specialist sends a detailed summary and care plan to your family doctor. Prescriptions (if needed) go to your pharmacy electronically. Additional requisitions (labs and imaging) will be emailed to you directly. Follow-up visits are scheduled as needed.' },
-              { q: 'Allied health services', a: 'If recommended, you can access dietitian, diabetes educator, or respiratory therapy sessions. These are private-pay services — fees are on our Fee Schedule page.' },
+              { q: 'Allied health services', a: 'If recommended, you can access dietitian, diabetes educator, or respiratory therapy sessions. These will be private-pay when available — contact us for updates and pricing.' },
             ].map((item, i) => (
               <div key={i} className="card p-6">
                 <h4 className="font-display text-lg mb-2">{item.q}</h4>
@@ -89,7 +89,7 @@ export default function ForPatientsPage() {
           <div className="space-y-6">
             {[
               { q: 'Do I need a referral?', a: 'Yes. OHIP-covered specialist consultations require a referral from your family doctor or nurse practitioner. Some private-pay allied health services may not require a referral — contact us to confirm.' },
-              { q: 'Is there a cost?', a: 'Specialist physician consultations are covered by OHIP at no cost to you. Allied health services (dietitian, CDE, respiratory therapy) are private-pay. See our Fee Schedule for details.' },
+              { q: 'Is there a cost?', a: 'Specialist physician consultations are covered by OHIP at no cost to you. Allied health services (dietitian, CDE, respiratory therapy) will be private-pay when offered — contact us for current information.' },
               { q: 'What technology do I need?', a: 'A smartphone, tablet, or computer with a camera, microphone, and internet connection. We\'ll send you instructions on how to join your video visit.' },
               { q: 'Is my information secure?', a: 'Yes. We use PHIPA-compliant platforms and encrypted video. Your health information is protected under Ontario\'s privacy legislation. See our Privacy Policy for details.' },
               { q: 'Can I see a specialist if I live in rural Ontario?', a: 'Absolutely — that\'s a core reason we exist. Our virtual model is designed specifically to serve patients in rural, northern, and underserved communities across Ontario.' },

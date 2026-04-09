@@ -6,7 +6,6 @@ const footerNav = {
   services: [
     { name: 'Diabetes Care', href: '/services/diabetes' },
     { name: 'Respirology', href: '/services/respirology' },
-    { name: 'Fee Schedule', href: '/fees' },
   ],
   patients: [
     { name: 'How It Works', href: '/how-it-works' },
@@ -44,7 +43,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/refer#download" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
+            <Link href="/refer#download" className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors">
               Download referral form
             </Link>
             <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-navy-900/80 transition-colors">

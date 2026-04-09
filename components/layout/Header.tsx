@@ -20,7 +20,6 @@ const navigation = [
   { name: 'For Providers', href: '/for-providers' },
   { name: 'Team', href: '/team' },
   { name: 'Resources', href: '/resources' },
-  { name: 'Fees', href: '/fees' },
 ];
 
 export default function Header() {

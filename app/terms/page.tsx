@@ -110,8 +110,8 @@ export default function TermsPage() {
               cost of the consultation.
             </p>
             <p>
-              <strong>Private-Pay Services:</strong> Fees for allied health services are listed on
-              our Fee Schedule page and are subject to change with reasonable notice. Payment is
+              <strong>Private-Pay Services:</strong> When allied health services are offered, applicable fees will be
+              communicated at booking and are subject to change with reasonable notice. Payment is
               due at the time of service unless alternative arrangements have been made. We accept
               credit card, debit, e-transfer, and direct billing to select Health Spending Account
               (HSA) providers.

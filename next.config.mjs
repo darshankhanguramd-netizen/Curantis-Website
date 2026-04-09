@@ -12,6 +12,9 @@ const nextConfig = {
       { source: '/resources/:path*', destination: '/blog/:path*' },
     ];
   },
+  async redirects() {
+    return [{ source: '/fees', destination: '/', permanent: false }];
+  },
 };
 
 const withMDX = createMDX({

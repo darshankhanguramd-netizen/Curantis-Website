@@ -133,18 +133,18 @@ export default function ForProvidersPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-brand-600 text-white">
+      <section className="section-padding bg-navy-900 text-white">
         <div className="container-wide text-center max-w-2xl mx-auto">
           <h2 className="text-white text-3xl">Ready to Refer?</h2>
-          <p className="mt-4 text-brand-100 text-lg">
+          <p className="mt-4 text-navy-200 text-lg">
             Download the PDF referral form, complete it, and fax it to our office.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/refer#download" className="bg-white text-brand-700 font-medium px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors inline-flex items-center gap-2">
+            <Link href="/refer#download" className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors inline-flex items-center gap-2">
               <Download className="w-4 h-4" />
               Download referral form
             </Link>
-            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-700 transition-colors">
+            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-navy-800 transition-colors">
               Referral instructions
             </Link>
           </div>
