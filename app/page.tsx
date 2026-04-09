@@ -69,7 +69,7 @@ export default function HomePage() {
               </h1>
               <p className="mt-6 text-lg md:text-xl text-navy-600 leading-relaxed">
                 A virtual clinic focused on expert diabetes and endocrinology care, plus
-                respirology — for patients across Ontario.
+                respirology for patients across Ontario.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/refer" className="btn-primary text-base">
@@ -134,7 +134,7 @@ export default function HomePage() {
                 icon: Clock,
                 title: 'Reduced Wait Times',
                 description:
-                  'Virtual delivery means faster access to specialist consultations — weeks, not months.',
+                  'Virtual delivery means faster access to specialist consultations: weeks, not months.',
               },
               {
                 icon: MapPin,
@@ -168,8 +168,8 @@ export default function HomePage() {
             <div>
               <h2>Our Services</h2>
               <p className="mt-3 max-w-xl">
-                OHIP-covered specialist consultations and private allied health services — 
-                all delivered virtually.
+                OHIP-covered specialist consultations and private allied health services, all
+                delivered virtually.
               </p>
             </div>
             <Link href="/services" className="btn-outline text-sm shrink-0">
@@ -219,7 +219,7 @@ export default function HomePage() {
           <div className="max-w-2xl mx-auto text-center mb-16">
             <h2>How Virtual Care Works</h2>
             <p className="mt-4">
-              From referral to ongoing management — a clear, simple process.
+              From referral to ongoing management. A clear, simple process.
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -317,18 +317,25 @@ export default function HomePage() {
                 Trusted, Regulated,{' '}
                 <span className="text-brand-600">Evidence-Based</span>
               </h2>
-              <p className="mt-4">
-                Curantis Specialty Care is co-founded by Dr. Darshan Singh Khangura — a
+              <p className="mt-4 text-navy-700">
+                Dr. Darshan Singh Khangura co-founded Curantis Specialty Care. He is a
                 board-certified specialist in Internal Medicine, Endocrinology and Metabolism,
-                and Obesity Medicine — and Dr. Namratta Kaur Ghatehorde, a respirologist with
-                certification in Internal Medicine and Respirology. Both are CPSO-registered.
-                Together they deliver virtual diabetes, endocrine, and respiratory care across
-                Ontario.
+                and Obesity Medicine, and he is registered with the College of Physicians and
+                Surgeons of Ontario.
+              </p>
+              <p className="mt-4 text-navy-700">
+                He wants the clinic to be accessible across Ontario, timely when waits elsewhere
+                are long, and exceptional in how clearly it explains the plan. Patients and
+                referring doctors should get practical guidance they can use, in plain language.
+              </p>
+              <p className="mt-4 text-navy-700">
+                Virtual visits are how we deliver that: better reach, faster answers, and
+                follow-up that fits real life.
               </p>
               <ul className="mt-8 space-y-4">
                 {[
                   'CPSO-registered specialist physicians',
-                  'OHIP-billed specialist consultations — no cost to patients',
+                  'OHIP-billed specialist consultations at no cost to patients',
                   'PHIPA-compliant virtual care platform',
                   'Clear consult notes back to referring physicians',
                   'Evidence-based, guideline-driven care',
@@ -345,23 +352,14 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4 w-full">
+            <div className="relative w-full max-w-md mx-auto lg:max-w-none lg:mx-0">
               <div className="relative aspect-[3/4] w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
                 <Image
                   src="/images/team/dr-khangura.png"
                   alt="Dr. Darshan Singh Khangura, co-founder and Medical Director"
                   fill
                   className="object-cover object-top"
-                  sizes="(max-width: 1024px) 45vw, 25rem"
-                />
-              </div>
-              <div className="relative aspect-[3/4] w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
-                <Image
-                  src="/images/team/dr-ghatehorde.png"
-                  alt="Dr. Namratta Kaur Ghatehorde, co-founder and respirologist"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 45vw, 25rem"
+                  sizes="(max-width: 1024px) 100vw, 28rem"
                 />
               </div>
             </div>

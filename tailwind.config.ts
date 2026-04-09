@@ -10,19 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Curantis accent — greens for icons, highlights, soft tints (CTAs use navy via globals)
+        // Curantis accent — teal aligned to public/images/brand/curantis-logo.png (tagline + caduceus)
+        // (Previous #2a9d72 read yellower than the logo’s blue-teal; CTAs stay navy via globals.css)
         brand: {
-          50: '#f0f9f6',
-          100: '#d9f0e8',
-          200: '#b3e1d1',
-          300: '#80ccb3',
-          400: '#4db392',
-          500: '#2a9d72',
-          600: '#1f7d5a',
-          700: '#1a6349',
-          800: '#164f3b',
-          900: '#123d2f',
-          950: '#0a2319',
+          50: '#f1f8f7',
+          100: '#daf1ee',
+          200: '#b3e4de',
+          300: '#85cdc3',
+          400: '#59b5a9',
+          500: '#489488', // median saturated teal from curantis-logo.png (tagline / symbol)
+          600: '#3c7d74',
+          700: '#33675f',
+          800: '#2b5550',
+          900: '#244642',
+          950: '#142a28',
         },
         navy: {
           50: '#f2f5f9',

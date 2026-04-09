@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -58,19 +57,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
-            <Link href="/" className="inline-block mb-4 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-              <span className="inline-block rounded-xl bg-white p-2.5 shadow-sm ring-1 ring-white/10">
-                <Image
-                  src="/images/brand/curantis-logo.png"
-                  alt="Curantis Specialty Care"
-                  width={200}
-                  height={72}
-                  className="h-9 w-auto object-contain object-left"
-                />
-              </span>
+            <Link
+              href="/"
+              className="inline-block mb-4 font-display text-xl text-white hover:text-brand-200 transition-colors rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Curantis Specialty Care
             </Link>
             <p className="text-navy-300 text-sm leading-relaxed mb-6">
-              Virtual specialist care for diabetes, endocrinology, and respirology — serving
+              Virtual specialist care for diabetes, endocrinology, and respirology, serving
               Ontario OHIP patients.
             </p>
             <div className="space-y-2 text-sm text-navy-300">
