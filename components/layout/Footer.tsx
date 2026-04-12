@@ -148,7 +148,7 @@ export default function Footer() {
         {/* CPSO + Legal bottom bar */}
         <div className="mt-16 pt-8 border-t border-navy-700">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="text-xs text-navy-400 space-y-1">
+            <div className="text-xs text-navy-900 space-y-1">
               <p>
                 © {currentYear} Darshan Khangura Medicine Professional Corporation, operating as Curantis Specialty Care.
               </p>
@@ -167,7 +167,7 @@ export default function Footer() {
                 Regulated by the College of Physicians and Surgeons of Ontario.
               </p>
             </div>
-            <div className="text-xs text-navy-500">
+            <div className="text-xs text-navy-900">
               <p>Fax: (905) 555-0124</p>
             </div>
           </div>
