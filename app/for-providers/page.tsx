@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FileText, Clock, CheckCircle2, ArrowRight, Download } from 'lucide-react';
 
@@ -27,8 +28,15 @@ export default function ForProvidersPage() {
               </Link>
             </div>
           </div>
-          <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-navy-50 to-brand-50 flex items-center justify-center">
-            <p className="text-navy-400 text-sm">[Image: Professional clinical workspace]</p>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
+            <Image
+              src="/images/for-providers/physician-page.png"
+              alt="Physician team and workspace for referring providers"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw"
+              priority
+            />
           </div>
         </div>
       </section>

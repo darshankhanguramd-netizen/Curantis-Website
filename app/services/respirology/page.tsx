@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Stethoscope, CheckCircle2, ArrowRight } from 'lucide-react';
 
@@ -27,8 +28,15 @@ export default function RespirologPage() {
               <Link href="/how-it-works" className="btn-secondary">How It Works</Link>
             </div>
           </div>
-          <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-brand-50 to-sage-100 flex items-center justify-center">
-            <p className="text-navy-400 text-sm">[Image: Respiratory care / inhaler context]</p>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
+            <Image
+              src="/images/services/respirology-care.png"
+              alt="Respiratory care consultation and inhaler management"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw"
+              priority
+            />
           </div>
         </div>
       </section>
