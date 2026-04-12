@@ -10,33 +10,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Curantis accent — teal aligned to public/images/brand/curantis-logo.png (tagline + caduceus)
-        // (Previous #2a9d72 read yellower than the logo’s blue-teal; CTAs stay navy via globals.css)
+        // Curantis accent — deep teal
         brand: {
-          50: '#f1f8f7',
-          100: '#daf1ee',
-          200: '#b3e4de',
-          300: '#85cdc3',
-          400: '#59b5a9',
-          500: '#489488', // median saturated teal from curantis-logo.png (tagline / symbol)
-          600: '#3c7d74',
-          700: '#33675f',
-          800: '#2b5550',
-          900: '#244642',
-          950: '#142a28',
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#66f0d7',
+          400: '#33e3ca',
+          500: '#2AAFA3',
+          600: '#229085',
+          700: '#1a7167',
+          800: '#155952',
+          900: '#0f423d',
+          950: '#0a211f',
         },
         navy: {
-          50: '#f2f5f9',
-          100: '#e1e7f0',
-          200: '#c5d0e3',
-          300: '#9bb0cf',
-          400: '#6e8bb6',
-          500: '#4d6d9e',
-          600: '#3c5685',
-          700: '#32466c',
-          800: '#2c3c5a',
-          900: '#1e2a40',   // Deep navy — authority, medical credibility
-          950: '#141c2d',
+          50: '#f1f1f5',
+          100: '#e2e2eb',
+          200: '#c5c5d7',
+          300: '#a8a8c3',
+          400: '#6b6b9e',
+          500: '#4e4e79',
+          600: '#3e3e61',
+          700: '#2f2f49',
+          800: '#1E214F',
+          900: '#123E5A',
+          950: '#0d0d1f',
         },
         sage: {
           50: '#f6f7f5',
@@ -49,6 +48,19 @@ const config: Config = {
           700: '#4a5442',
           800: '#3d4537',
           900: '#333a2f',
+        },
+        primary: {
+          50: '#e6f0f5',
+          100: '#cce1eb',
+          200: '#99c3d7',
+          300: '#66a5c3',
+          400: '#3387af',
+          500: '#0B3D5C',
+          600: '#0a354f',
+          700: '#082d42',
+          800: '#062535',
+          900: '#051d28',
+          950: '#030f14',
         },
         warm: {
           50: '#fdf8f4',

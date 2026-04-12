@@ -101,7 +101,7 @@ export default function HomePage() {
               </p>
               <div className="relative aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
                 <Image
-                  src="/images/hero/home-hero.jpg"
+                  src="/images/hero/home-hero.png"
                   alt="Patient smiling and waving during a secure video visit on a laptop from home"
                   fill
                   className="object-cover object-[center_22%]"

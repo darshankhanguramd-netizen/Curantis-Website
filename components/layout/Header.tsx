@@ -53,11 +53,11 @@ export default function Header() {
             className="flex items-center shrink-0 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
             <Image
-              src="/images/brand/curantis-logo.png"
+              src="/images/brand/curantis-logo.jpg"
               alt="Curantis Specialty Care"
               width={200}
               height={72}
-              className="h-11 w-auto lg:h-[3.25rem] object-contain object-left"
+              className="h-16 w-auto lg:h-20 object-contain object-left"
               priority
             />
           </Link>

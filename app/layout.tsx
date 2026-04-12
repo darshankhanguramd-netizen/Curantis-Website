@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Curantis Specialty Care' }],
   icons: {
-    icon: [{ url: '/images/brand/curantis-logo.png', type: 'image/png' }],
-    apple: '/images/brand/curantis-logo.png',
+    icon: [{ url: '/images/brand/curantis-logo.jpg', type: 'image/png' }],
+    apple: '/images/brand/curantis-logo.jpg',
   },
   openGraph: {
     type: 'website',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'Expert diabetes, endocrinology, and respirology care delivered virtually across Ontario.',
     images: [
       {
-        url: '/images/hero/home-hero.jpg',
+        url: '/images/hero/home-hero.png',
         width: 860,
         height: 587,
         alt: 'Patient during a virtual specialist visit from home',
