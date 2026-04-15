@@ -46,7 +46,7 @@ export default function Header() {
 
       {/* Main nav */}
       <nav className="container-wide" aria-label="Primary navigation">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-24 lg:h-28">
           {/* Logo */}
           <Link
             href="/"
@@ -55,9 +55,9 @@ export default function Header() {
             <Image
               src="/images/brand/curantis-logo.jpg"
               alt="Curantis Specialty Care"
-              width={200}
-              height={72}
-              className="h-16 w-auto lg:h-20 object-contain object-left"
+              width={240}
+              height={96}
+              className="h-20 w-auto lg:h-24 object-contain object-left"
               priority
             />
           </Link>
