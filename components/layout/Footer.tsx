@@ -72,6 +72,10 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-brand-400" />
                 (905) 555-0123
               </a>
+              <p className="flex items-center gap-2">
+                <span className="w-4 h-4 text-brand-400">Fax:</span>
+                (289) 644-0454
+              </p>
               <a href="mailto:info@curantiscare.ca" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-brand-400" />
                 info@curantiscare.ca
@@ -168,7 +172,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="text-xs text-black">
-              <p>Fax: (905) 555-0124</p>
+              <p>Fax: (289) 644-0454</p>
             </div>
           </div>
         </div>

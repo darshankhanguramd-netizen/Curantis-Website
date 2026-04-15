@@ -41,7 +41,7 @@ export default function ReferPage() {
             <h2 className="font-display text-2xl text-navy-900">Download &amp; fax</h2>
             <p className="mt-4 max-w-lg mx-auto text-navy-600">
               Download our referral form, complete it, and fax to{' '}
-              <strong>(905) 555-0124</strong>. Referrals are typically processed within 2–3 business
+              <strong>(289) 644-0454</strong>. Referrals are typically processed within 2–3 business
               days.
             </p>
             <a
@@ -53,7 +53,7 @@ export default function ReferPage() {
               Download Referral Form (PDF)
             </a>
             <p className="mt-4 text-xs text-navy-500">
-              PDF format — print, complete, sign, and fax to (905) 555-0124
+              PDF format — print, complete, sign, and fax to (289) 644-0454
             </p>
           </div>
 

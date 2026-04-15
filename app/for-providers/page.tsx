@@ -72,7 +72,7 @@ export default function ForProvidersPage() {
                 <h4 className="font-display text-lg mb-1">Option 1: Download &amp; Fax</h4>
                 <p className="text-sm text-navy-600 mb-3">
                   Download our referral form (PDF), complete it, sign, and fax to
-                  <strong> (905) 555-0124</strong>. Include patient demographics, clinical question,
+                  <strong> (289) 644-0454</strong>. Include patient demographics, clinical question,
                   history, medications, recent labs, your CPSO number, and OHIP billing number.
                 </p>
                 <Link href="/refer#download" className="text-brand-600 hover:text-brand-800 text-sm font-medium inline-flex items-center gap-1">

@@ -56,7 +56,7 @@ export default function ContactPage() {
                   <Send className="w-5 h-5 text-brand-600 mt-0.5" />
                   <div>
                     <p className="font-medium text-navy-900 text-sm">Fax</p>
-                    <p className="text-navy-600 text-sm">(905) 555-0124</p>
+                    <p className="text-navy-600 text-sm">(289) 644-0454</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
