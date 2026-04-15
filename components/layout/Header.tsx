@@ -55,9 +55,9 @@ export default function Header() {
             <Image
               src="/images/brand/curantis-logo.jpg"
               alt="Curantis Specialty Care"
-              width={240}
-              height={96}
-              className="h-20 w-auto lg:h-24 object-contain object-left"
+              width={270}
+              height={108}
+              className="h-22 w-auto lg:h-28 object-contain object-left"
               priority
             />
           </Link>
