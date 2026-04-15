@@ -32,10 +32,10 @@ export default function HomePage() {
                 <span>
                   Fax:{' '}
                   <a
-                    href="fax:+19055550124"
+                    href="fax:+12896440454"
                     className="font-medium text-navy-900 hover:text-brand-700 underline-offset-2 hover:underline"
                   >
-                    (905) 555-0124
+                    (289) 644-0454
                   </a>
                 </span>
               </li>

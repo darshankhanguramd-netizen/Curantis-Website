@@ -35,11 +35,11 @@ export default function Header() {
             Virtual Specialist Care for Ontario OHIP Patients
           </p>
           <a
-            href="tel:+19055550123"
+            href="fax:+12896440454"
             className="hidden md:flex items-center gap-1.5 text-white hover:text-brand-300"
           >
             <Phone className="w-3.5 h-3.5" />
-            (905) 555-0123
+            (289) 644-0454
           </a>
         </div>
       </div>
