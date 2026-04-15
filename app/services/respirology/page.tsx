@@ -17,7 +17,7 @@ export default function RespirologPage() {
             <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
               <Stethoscope className="w-4 h-4" /> OHIP Covered
             </div>
-            <h1>Respirology <span className="text-brand-600">Care</span></h1>
+            <h1><span className="text-primary-500">Respirology Care</span></h1>
             <p className="mt-6 text-lg text-navy-600">
               Assessment and management of chronic respiratory conditions through secure 
               virtual consultations — including inhaler optimization, spirometry interpretation, 
