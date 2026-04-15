@@ -73,8 +73,8 @@ export default function Footer() {
                 (905) 555-0123
               </a>
               <p className="flex items-center gap-2">
-                <span className="w-4 h-4 text-brand-400">Fax:</span>
-                (289) 644-0454
+                <span className="text-brand-400 font-semibold">Fax:</span>
+                <span>(289) 644-0454</span>
               </p>
               <a href="mailto:info@curantiscare.ca" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-brand-400" />
