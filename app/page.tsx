@@ -74,7 +74,7 @@ export default function HomePage() {
               />
             </div>
             <div className="flex items-center h-[120px]">
-              <span className="text-2xl md:text-3xl font-bold text-navy-600 whitespace-nowrap">Curantis Specialty Care</span>
+              <span className="text-3xl md:text-5xl font-bold text-primary-500 whitespace-nowrap">Curantis Specialty Care</span>
             </div>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
