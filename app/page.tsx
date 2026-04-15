@@ -62,7 +62,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="container-wide pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20">
-          <div className="flex items-center gap-6 mb-8 min-h-[120px]">
+          <div className="flex items-center gap-6 mb-8 min-h-[120px] mt-[-36px]">
             <div className="shrink-0 flex items-center justify-start h-[120px] mt-[-20px]">
               <Image
                 src="/images/brand/logo-home.jpg"
