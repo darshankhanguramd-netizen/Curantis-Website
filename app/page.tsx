@@ -61,19 +61,19 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
-        <div className="container-wide pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20">
-          <div className="flex items-center gap-6 mb-8 min-h-[120px] mt-[-36px]">
-            <div className="shrink-0 flex items-center justify-start h-[120px] mt-[-20px]">
+        <div className="container-wide pt-3 md:pt-4 pb-12 md:pb-16 lg:pb-20">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="shrink-0">
               <Image
                 src="/images/brand/logo-home.jpg"
                 alt="Curantis Specialty Care logo"
-                width={120}
-                height={120}
+                width={100}
+                height={100}
                 className="rounded-xl"
                 priority
               />
             </div>
-            <div className="flex items-center h-[120px]">
+            <div>
               <span className="text-3xl md:text-5xl font-bold text-primary-500 whitespace-nowrap">Curantis Specialty Care</span>
             </div>
           </div>

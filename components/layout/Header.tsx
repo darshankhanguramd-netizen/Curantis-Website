@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Main nav */}
       <nav className="container-wide" aria-label="Primary navigation">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <Link
             href="/"
@@ -64,9 +64,9 @@ export default function Header() {
               <img
                 src="/images/brand/curantis_vibrant_logo_only.jpg"
                 alt="Curantis Specialty Care"
-                width={72}
-                height={72}
-                className="h-14 w-auto lg:h-16 object-contain object-left"
+                width={48}
+                height={48}
+                className="h-9 w-auto lg:h-10 object-contain object-left"
                 style={{ display: 'block' }}
               />
           </Link>

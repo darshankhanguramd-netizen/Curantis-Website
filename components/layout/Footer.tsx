@@ -150,7 +150,7 @@ export default function Footer() {
         </div>
 
         {/* CPSO + Legal bottom bar */}
-        <div className="mt-16 pt-8 border-t border-navy-700">
+        <div className="mt-16 pt-8 border-t border-navy-300">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="text-xs text-navy-300 space-y-1">
               <p>
