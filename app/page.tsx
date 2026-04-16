@@ -29,11 +29,11 @@ export default function HomePage() {
             <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-x-8 sm:gap-y-2 text-sm text-navy-700">
               <li className="flex items-center gap-2">
                 <Printer className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
-                <span>
+                <span className="text-brand-600 font-medium">
                   Fax:{' '}
                   <a
                     href="fax:+12896440454"
-                    className="font-medium text-navy-900 hover:text-brand-700 underline-offset-2 hover:underline"
+                    className="hover:text-brand-700 underline-offset-2 hover:underline"
                   >
                     (289) 644-0454
                   </a>
@@ -111,9 +111,6 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <p className="text-2xs uppercase tracking-[0.18em] text-navy-500 font-medium mb-3">
-                Professional clinical workspace
-              </p>
               <div className="relative aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
                 <Image
                   src="/images/hero/home-hero.png"

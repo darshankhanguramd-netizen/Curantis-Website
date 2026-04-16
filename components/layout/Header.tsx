@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Printer, ChevronDown } from 'lucide-react';
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -34,32 +34,41 @@ export default function Header() {
           <p className="text-navy-200">
             Virtual Specialist Care for Ontario OHIP Patients
           </p>
-          <a
-            href="tel:+19055550123"
-            className="hidden md:flex items-center gap-1.5 text-white hover:text-brand-300"
-          >
-            <Phone className="w-3.5 h-3.5" />
-            (905) 555-0123
-          </a>
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="tel:+19055550123"
+              className="flex items-center gap-1.5 text-white hover:text-brand-300"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              (905) 555-0123
+            </a>
+            <a
+              href="fax:+12896440454"
+              className="flex items-center gap-1.5 text-white hover:text-brand-300"
+            >
+              <Printer className="w-3.5 h-3.5" />
+              (289) 644-0454
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Main nav */}
       <nav className="container-wide" aria-label="Primary navigation">
-        <div className="flex items-center justify-between h-24 lg:h-28">
+          <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link
             href="/"
             className="flex items-center shrink-0 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
-            <Image
-              src="/images/brand/curantis-logo.jpg"
-              alt="Curantis Specialty Care"
-              width={240}
-              height={96}
-              className="h-20 w-auto lg:h-24 object-contain object-left"
-              priority
-            />
+              <Image
+                src="/images/brand/curantis_vibrant_logo_only.jpg"
+                alt="Curantis Specialty Care Vibrant Logo"
+                width={180}
+                height={72}
+                className="h-14 w-auto lg:h-16 object-contain object-left"
+                priority
+              />
           </Link>
 
           {/* Desktop nav */}
