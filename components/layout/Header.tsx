@@ -62,9 +62,9 @@ export default function Header() {
             className="flex items-center shrink-0 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
               <img
-                src="/images/brand/curantis-logo.png"
+                src="/images/brand/curantis_vibrant_logo_only.jpg"
                 alt="Curantis Specialty Care"
-                width={180}
+                width={72}
                 height={72}
                 className="h-14 w-auto lg:h-16 object-contain object-left"
                 style={{ display: 'block' }}
