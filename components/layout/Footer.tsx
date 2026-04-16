@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Printer } from 'lucide-react';
 
 const footerNav = {
   services: [
@@ -72,15 +72,15 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-brand-400" />
                 (905) 555-0123
               </a>
-              <p className="flex items-center gap-2">
-                <span className="text-brand-400 font-semibold">Fax:</span>
-                <span>(289) 644-0454</span>
+              <p className="flex items-center gap-2 text-navy-300 text-sm">
+                <Printer className="w-4 h-4 text-brand-400" />
+                (289) 644-0454
               </p>
               <a href="mailto:info@curantiscare.ca" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-brand-400" />
                 info@curantiscare.ca
               </a>
-              <p className="flex items-center gap-2">
+              <p className="flex items-center gap-2 text-navy-300 text-sm">
                 <MapPin className="w-4 h-4 text-brand-400" />
                 Ontario, Canada (Virtual)
               </p>
@@ -152,27 +152,27 @@ export default function Footer() {
         {/* CPSO + Legal bottom bar */}
         <div className="mt-16 pt-8 border-t border-navy-300">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="text-xs text-navy-300 space-y-1">
-              <p>
+            <div className="space-y-1">
+              <p className="text-navy-300">
                 © {currentYear} Darshan Khangura Medicine Professional Corporation, operating as Curantis Specialty Care.
               </p>
-              <p>
+              <p className="text-navy-300">
                 Dr. Darshan Singh Khangura, MD — Internal Medicine, Endocrinology &amp; Metabolism, Obesity Medicine |{' '}
                 <a
                   href="https://register.cpso.on.ca/physician-info/?cpsonum=124706"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-brand-400 hover:text-brand-300 transition-colors"
+                  className="text-navy-300 hover:text-white transition-colors"
                 >
                   CPSO# 124706
                 </a>
               </p>
-              <p>
+              <p className="text-navy-300">
                 Regulated by the College of Physicians and Surgeons of Ontario.
               </p>
             </div>
-            <div className="text-xs text-navy-300">
-              <p>Fax: (289) 644-0454</p>
+            <div>
+              <p className="text-navy-300">Fax: (289) 644-0454</p>
             </div>
           </div>
         </div>

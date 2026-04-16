@@ -152,7 +152,7 @@ export default function HomePage() {
                 icon: MapPin,
                 title: 'No Travel Required',
                 description:
-                  'Whether you\'re in Kenora or Kitchener, your consultation happens from home.',
+                  'Wherever you are in Ontario, your consultation happens from home.',
               },
               {
                 icon: Users,
