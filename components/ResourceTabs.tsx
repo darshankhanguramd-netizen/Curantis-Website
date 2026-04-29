@@ -54,6 +54,18 @@ const sections: Section[] = [
         href: '/documents/low-carb-snacks.docx',
         type: 'download',
       },
+      {
+        title: 'Obesity Canada — Managing Obesity',
+        description: 'Evidence-based information on obesity management strategies from Obesity Canada.',
+        href: 'https://obesitycanada.ca/understanding-obesity/management/',
+        type: 'external',
+      },
+      {
+        title: 'The Obesity Society — Information for Patients',
+        description: 'Patient resources and information on obesity treatment from The Obesity Society.',
+        href: 'https://www.obesity.org/information-for-patients/',
+        type: 'external',
+      },
     ],
   },
   {

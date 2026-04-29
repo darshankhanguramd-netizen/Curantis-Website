@@ -274,7 +274,7 @@ export default function TermsPage() {
               <p className="text-navy-700 mt-2">
                 Darshan Khangura Medicine Professional Corporation<br />
                 Email: info@curantiscare.ca<br />
-                Phone: (905) 555-0123<br />
+                Phone: (000) 000-0000<br />
                 Fax: (905) 555-0124<br />
                 Web: curantiscare.ca
               </p>
