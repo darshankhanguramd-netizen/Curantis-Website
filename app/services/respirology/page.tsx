@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RespirologPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">

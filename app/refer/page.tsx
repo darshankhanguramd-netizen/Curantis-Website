@@ -4,7 +4,7 @@ import { FileText, Download, AlertCircle } from 'lucide-react';
 export default function ReferPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
           <h1>
             Refer a <span className="text-brand-600">Patient</span>

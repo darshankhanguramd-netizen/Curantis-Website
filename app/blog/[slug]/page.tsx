@@ -32,7 +32,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-narrow">
             <Link href="/resources" className="inline-flex items-center gap-1.5 text-sm text-brand-600 hover:text-brand-800 mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to Resources

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ForProvidersPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1>For Referring <span className="text-brand-600">Physicians</span></h1>

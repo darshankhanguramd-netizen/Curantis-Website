@@ -54,7 +54,7 @@ const alliedHealth = [
 export default function TeamPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
           <h1>Our <span className="text-brand-600">Team</span></h1>
           <p className="mt-6 text-xl text-navy-600">
@@ -64,7 +64,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-24 lg:pb-32 bg-white">
         <div className="container-wide max-w-4xl">
           {team.map((member, i) => (
             <div

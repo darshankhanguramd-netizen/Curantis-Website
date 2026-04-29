@@ -6,7 +6,6 @@ import {
   Clock,
   MapPin,
   Stethoscope,
-  Activity,
   CheckCircle2,
   Users,
   FileText,
@@ -15,6 +14,7 @@ import {
   FileDown,
   ClipboardPenLine,
 } from 'lucide-react';
+import Pancreas from '@/components/icons/Pancreas';
 
 export default function HomePage() {
   return (
@@ -62,21 +62,6 @@ export default function HomePage() {
           </div>
         </div>
         <div className="container-wide pt-3 md:pt-4 pb-12 md:pb-16 lg:pb-20">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="shrink-0">
-              <Image
-                src="/images/brand/logo-home.jpg"
-                alt="Curantis Specialty Care logo"
-                width={100}
-                height={100}
-                className="rounded-xl"
-                priority
-              />
-            </div>
-            <div>
-              <span className="text-3xl md:text-5xl font-bold text-primary-500 whitespace-nowrap">Curantis Specialty Care</span>
-            </div>
-          </div>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-xl">
               <h1 className="text-balance text-4xl md:text-5xl font-display">
@@ -191,7 +176,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
               {
-                icon: Activity,
+                icon: Pancreas,
                 title: 'Diabetes Care',
                 href: '/services/diabetes',
                 description: 'Type 1, Type 2, insulin management, complex diabetes, and glucose optimization.',

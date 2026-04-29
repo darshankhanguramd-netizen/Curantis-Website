@@ -22,7 +22,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
           <h1>Contact <span className="text-brand-600">Us</span></h1>
           <p className="mt-4 text-lg text-navy-600">

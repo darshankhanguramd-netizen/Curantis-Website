@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Shield, Clock, MapPin, CheckCircle2, Phone } from 'lucide-react';
 
@@ -10,13 +11,25 @@ export const metadata: Metadata = {
 export default function ForPatientsPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
-        <div className="container-wide max-w-3xl">
-          <h1>For <span className="text-brand-600">Patients</span></h1>
-          <p className="mt-6 text-xl text-navy-600">
-            You&rsquo;ve been referred to Curantis Specialty Care by your doctor. 
-            Here&rsquo;s what to expect — from your first appointment to ongoing care.
-          </p>
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
+        <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1>For <span className="text-brand-600">Patients</span></h1>
+            <p className="mt-6 text-xl text-navy-600">
+              You&rsquo;ve been referred to Curantis Specialty Care by your doctor.
+              Here&rsquo;s what to expect — from your first appointment to ongoing care.
+            </p>
+          </div>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
+            <Image
+              src="/images/for-patients/for-patients-hero.png"
+              alt="Patients enjoying a virtual specialist consultation from home"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </div>
         </div>
       </section>
 

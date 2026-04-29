@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
-        <div className="container-wide">
-          <div className="max-w-3xl">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
+        <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
+          <div>
             <h1>
               Better Access to{' '}
               <span className="text-brand-600">Better Care</span>
@@ -25,6 +25,16 @@ export default function AboutPage() {
               delivery to connect Ontario patients with experienced subspecialists —
               faster and closer to home.
             </p>
+          </div>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
+            <Image
+              src="/images/about-hero.png"
+              alt="Medical office with stethoscope and virtual care portal"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
           </div>
         </div>
       </section>

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Activity, CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
+import Pancreas from '@/components/icons/Pancreas';
 
 export const metadata: Metadata = {
   title: 'Diabetes Care',
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
 export default function DiabetesPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
-              <Activity className="w-4 h-4" /> OHIP Covered
+              <Pancreas className="w-4 h-4" /> OHIP Covered
             </div>
             <h1><span className="text-primary-500">Diabetes Care</span></h1>
             <p className="mt-6 text-lg text-navy-600">

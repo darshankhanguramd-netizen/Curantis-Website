@@ -48,7 +48,7 @@ const categories = ['All', 'Diabetes', 'Respirology', 'Patient Info', 'For Provi
 export default function BlogPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
           <h1>
             <span className="text-brand-600">Resources</span>

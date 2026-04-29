@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
-import { Activity, Stethoscope, ArrowRight } from 'lucide-react';
+import { Stethoscope, ArrowRight } from 'lucide-react';
+import Pancreas from '@/components/icons/Pancreas';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    icon: Activity,
+    icon: Pancreas,
     title: 'Diabetes Care',
     href: '/services/diabetes',
     tag: 'OHIP Covered',
@@ -47,16 +49,28 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
-        <div className="container-wide max-w-3xl">
-          <h1>
-            Our <span className="text-brand-600">Services</span>
-          </h1>
-          <p className="mt-6 text-xl text-navy-600">
-            Specialist diabetes, endocrinology, and respirology consultations covered by OHIP, 
-            plus allied health services available through private pay, Health Spending Accounts, 
-            or employer benefits.
-          </p>
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
+        <div className="container-wide grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1>
+              Our <span className="text-brand-600">Services</span>
+            </h1>
+            <p className="mt-6 text-xl text-navy-600">
+              Specialist diabetes, endocrinology, and respirology consultations covered by OHIP,
+              plus allied health services available through private pay, Health Spending Accounts,
+              or employer benefits.
+            </p>
+          </div>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
+            <Image
+              src="/images/services-hero.png"
+              alt="Virtual specialist care services including diabetes, respirology and more"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </div>
         </div>
       </section>
 

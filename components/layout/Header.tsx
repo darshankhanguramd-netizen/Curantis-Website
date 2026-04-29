@@ -178,6 +178,22 @@ export default function Header() {
           </div>
         )}
       </nav>
+
+      {/* Brand strip */}
+      <div className="border-t border-navy-100 bg-white">
+        <div className="container-wide py-3 flex items-center gap-4">
+          <img
+            src="/images/brand/logo-home.jpg"
+            alt="Curantis Specialty Care"
+            width={80}
+            height={80}
+            className="h-20 w-auto object-contain rounded-xl"
+          />
+          <span className="text-3xl md:text-4xl font-display italic tracking-wide text-primary-500 whitespace-nowrap">
+            Curantis Specialty Care
+          </span>
+        </div>
+      </div>
     </header>
   );
 }

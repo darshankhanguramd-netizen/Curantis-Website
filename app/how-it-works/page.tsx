@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FileText, ClipboardList, Video, Heart, RefreshCw, ArrowRight } from 'lucide-react';
 
@@ -48,13 +49,23 @@ const steps = [
 export default function HowItWorksPage() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-brand-50/40 to-white">
+      <section className="page-hero bg-gradient-to-b from-brand-50/40 to-white">
         <div className="container-wide max-w-3xl">
           <h1>How Virtual Care <span className="text-brand-600">Works</span></h1>
           <p className="mt-6 text-xl text-navy-600">
-            From referral to ongoing management — a clear, simple process designed to 
+            From referral to ongoing management — a clear, simple process designed to
             respect your time and keep you connected with your care team.
           </p>
+          <div className="mt-10 relative w-full rounded-2xl overflow-hidden shadow-soft">
+            <Image
+              src="/images/how-it-works.png"
+              alt="Five-step virtual care process: Physician Referral, Intake and Preparation, Virtual Consultation, Care Plan and Communication, Ongoing Follow-Up"
+              width={1200}
+              height={400}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
         </div>
       </section>
 
