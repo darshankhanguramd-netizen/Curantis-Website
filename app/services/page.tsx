@@ -21,7 +21,6 @@ const services = [
     conditions: [
       'Type 1 Diabetes',
       'Type 2 Diabetes',
-      'Insulin pump management',
       'Hypoglycemia assessment',
       'Pre-diabetes / metabolic syndrome',
       'Gestational diabetes follow-up',
