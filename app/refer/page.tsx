@@ -20,7 +20,7 @@ export default function ReferPage() {
         </div>
       </section>
 
-      <section id="download" className="section-padding bg-white">
+      <section id="download" className="section-padding bg-white scroll-mt-36">
         <div className="container-wide max-w-3xl">
           <div className="bg-warm-50 border border-warm-200 rounded-xl p-4 mb-8 flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-warm-600 mt-0.5 shrink-0" />

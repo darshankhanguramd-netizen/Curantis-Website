@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FileText, Clock, CheckCircle2, ArrowRight, Download } from 'lucide-react';
+import DownloadAndNavigateButton from '@/components/DownloadAndNavigateButton';
 
 export const metadata: Metadata = {
   title: 'For Providers',
@@ -20,12 +21,7 @@ export default function ForProvidersPage() {
               Detailed consult notes. No access bonuses impacted.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/refer#download" className="btn-primary">
-                <Download className="w-4 h-4 mr-2" /> Download referral form
-              </Link>
-              <Link href="/refer" className="btn-outline">
-                Fax details &amp; instructions
-              </Link>
+              <DownloadAndNavigateButton className="btn-primary" label="Download Referral Form & Fax Instructions" />
             </div>
           </div>
           <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
@@ -148,13 +144,10 @@ export default function ForProvidersPage() {
             Download the PDF referral form, complete it, and fax it to our office.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/refer#download" className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors inline-flex items-center gap-2">
-              <Download className="w-4 h-4" />
-              Download referral form
-            </Link>
-            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-navy-800 transition-colors">
-              Referral instructions
-            </Link>
+            <DownloadAndNavigateButton
+              className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors"
+              label="Download Referral Form & Fax Instructions"
+            />
           </div>
         </div>
       </section>
