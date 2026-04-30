@@ -61,9 +61,9 @@ const sections: Section[] = [
         type: 'external',
       },
       {
-        title: 'The Obesity Society - Bariatric Surgery',
-        description: 'Patient information on bariatric surgery from The Obesity Society.',
-        href: '/documents/the-obesity-society-bariatric-surgery.pdf',
+        title: 'The Obesity Society - Weight Management: 10 Keys to Success',
+        description: 'Ten evidence-based keys to successful weight management from The Obesity Society.',
+        href: '/documents/the-obesity-society-weight-management-10-keys-to-success.pdf',
         type: 'download',
       },
       {
@@ -91,9 +91,9 @@ const sections: Section[] = [
         type: 'download',
       },
       {
-        title: 'The Obesity Society - Weight Management: 10 Keys to Success',
-        description: 'Ten evidence-based keys to successful weight management from The Obesity Society.',
-        href: '/documents/the-obesity-society-weight-management-10-keys-to-success.pdf',
+        title: 'The Obesity Society - Bariatric Surgery',
+        description: 'Patient information on bariatric surgery from The Obesity Society.',
+        href: '/documents/the-obesity-society-bariatric-surgery.pdf',
         type: 'download',
       },
     ],
