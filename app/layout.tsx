@@ -84,7 +84,7 @@ export default function RootLayout({
               logo: 'https://curantiscare.ca/images/brand/curantis-logo.png',
               image: 'https://curantiscare.ca/images/brand/curantis-logo.png',
               url: 'https://curantiscare.ca',
-              telephone: '+1-000-000-0000',
+              telephone: '+1-289-670-7727',
               faxNumber: '+1-905-555-0124',
               email: 'info@curantiscare.ca',
               address: {

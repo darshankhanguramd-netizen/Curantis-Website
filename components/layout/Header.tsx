@@ -36,11 +36,11 @@ export default function Header() {
           </p>
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+10000000000"
+              href="tel:+12896707727"
               className="flex items-center gap-1.5 text-white hover:text-brand-300"
             >
               <Phone className="w-3.5 h-3.5" />
-              (000) 000-0000
+              (289) 670-7727
             </a>
             <a
               href="fax:+12896440454"
@@ -62,7 +62,7 @@ export default function Header() {
             className="flex items-center shrink-0 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
               <img
-                src="/images/brand/curantis_vibrant_logo_only.jpg"
+                src="/images/brand/home-icon.png"
                 alt="Curantis Specialty Care"
                 width={48}
                 height={48}

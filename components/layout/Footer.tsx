@@ -43,10 +43,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/refer#download" className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors">
-              Download referral form
-            </Link>
-            <Link href="/refer" className="border-2 border-white text-white font-medium px-6 py-3 rounded-xl hover:bg-navy-900/80 transition-colors">
-              Fax &amp; instructions
+              Download Form &amp; Fax Instructions
             </Link>
           </div>
         </div>
@@ -59,18 +56,22 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
             <Link
               href="/"
-              className="inline-block mb-4 font-display text-xl text-white hover:text-brand-200 transition-colors rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="block w-fit ml-[2.8rem] mt-0 mb-6 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Curantis Specialty Care
+              <img
+                src="/images/brand/curantis_vibrant_logo_only.jpg"
+                alt="Curantis Specialty Care"
+                className="h-16 w-auto object-contain rounded-lg"
+              />
             </Link>
             <p className="text-navy-300 text-sm leading-relaxed mb-6">
               Virtual specialist care for diabetes, endocrinology, and respirology, serving
               Ontario OHIP patients.
             </p>
             <div className="space-y-2 text-sm text-navy-300">
-              <a href="tel:+10000000000" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+12896707727" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-brand-400" />
-                (000) 000-0000
+                (289) 670-7727
               </a>
               <p className="flex items-center gap-2 text-navy-300 text-sm">
                 <Printer className="w-4 h-4 text-brand-400" />

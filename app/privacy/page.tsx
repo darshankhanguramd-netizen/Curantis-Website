@@ -257,7 +257,7 @@ export default function PrivacyPage() {
                 Dr. Darshan Singh Khangura<br />
                 Curantis Specialty Care<br />
                 Email: privacy@curantiscare.ca<br />
-                Phone: (000) 000-0000<br />
+                Phone: (289) 670-7727<br />
                 Fax: (905) 555-0124
               </p>
               <p className="text-navy-600 mt-4 text-sm">

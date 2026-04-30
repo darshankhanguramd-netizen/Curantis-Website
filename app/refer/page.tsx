@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FileText, Download, AlertCircle } from 'lucide-react';
+import DownloadAndScrollButton from '@/components/DownloadAndScrollButton';
 
 export default function ReferPage() {
   return (
@@ -14,10 +15,7 @@ export default function ReferPage() {
             practitioners. Download our referral form, complete it, and fax it to the number below.
           </p>
           <div className="mt-6">
-            <a href="#download" className="btn-primary text-sm inline-flex">
-              <Download className="w-4 h-4 mr-2" />
-              Download PDF
-            </a>
+            <DownloadAndScrollButton />
           </div>
         </div>
       </section>
