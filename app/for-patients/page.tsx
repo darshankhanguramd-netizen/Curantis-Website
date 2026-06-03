@@ -122,8 +122,8 @@ export default function ForPatientsPage() {
           <p className="mt-4">We&rsquo;re happy to help. Reach out any time.</p>
           <div className="mt-8 flex justify-center gap-4">
             <Link href="/contact" className="btn-primary">Contact Us</Link>
-            <a href="tel:+12896707727" className="btn-secondary">
-              <Phone className="w-4 h-4 mr-2" /> (289) 670-7727
+            <a href="tel:+12892953831" className="btn-secondary">
+              <Phone className="w-4 h-4 mr-2" /> (289) 295-3831
             </a>
           </div>
         </div>

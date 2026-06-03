@@ -375,9 +375,9 @@ export default function HomePage() {
             <Link href="/contact" className="btn-primary">
               Contact Us
             </Link>
-            <a href="tel:+12896707727" className="btn-secondary">
+            <a href="tel:+12892953831" className="btn-secondary">
               <Phone className="w-4 h-4 mr-2" />
-              (289) 670-7727
+              (289) 295-3831
             </a>
           </div>
         </div>

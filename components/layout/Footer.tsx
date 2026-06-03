@@ -69,9 +69,9 @@ export default function Footer() {
               Ontario OHIP patients.
             </p>
             <div className="space-y-2 text-sm text-navy-300">
-              <a href="tel:+12896707727" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+12892953831" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-brand-400" />
-                (289) 670-7727
+                (289) 295-3831
               </a>
               <p className="flex items-center gap-2 text-navy-300 text-sm">
                 <Printer className="w-4 h-4 text-brand-400" />

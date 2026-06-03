@@ -104,7 +104,7 @@ const sections: Section[] = [
       {
         title: 'Canadian Lung Association — How to Use Your Inhaler',
         description: 'Step-by-step guidance on proper inhaler technique to ensure your medication reaches your lungs effectively.',
-        href: 'https://www.lung.ca/inhaler-how-to',
+        href: 'https://www.lung.ca/reduce-symptoms-lung-disease/how-use-your-inhaler/',
         type: 'external',
       },
     ],

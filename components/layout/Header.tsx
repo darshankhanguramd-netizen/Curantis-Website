@@ -36,11 +36,11 @@ export default function Header() {
           </p>
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+12896707727"
+              href="tel:+12892953831"
               className="flex items-center gap-1.5 text-white hover:text-brand-300"
             >
               <Phone className="w-3.5 h-3.5" />
-              (289) 670-7727
+              (289) 295-3831
             </a>
             <a
               href="fax:+12896440454"
