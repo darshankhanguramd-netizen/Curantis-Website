@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Printer, ChevronDown } from 'lucide-react';
 
@@ -181,15 +180,15 @@ export default function Header() {
 
       {/* Brand strip */}
       <div className="border-t border-navy-100 bg-white">
-        <div className="container-wide py-3 flex items-center gap-4">
+        <div className="container-wide py-2 md:py-3 flex items-center gap-2 md:gap-4">
           <img
             src="/images/brand/logo-home.jpg"
             alt="Curantis Specialty Care"
             width={80}
             height={80}
-            className="h-20 w-auto object-contain rounded-xl"
+            className="h-12 md:h-20 w-auto object-contain rounded-xl shrink-0"
           />
-          <span className="text-3xl md:text-4xl font-display italic tracking-wide text-primary-500 whitespace-nowrap">
+          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display italic tracking-wide text-primary-500 whitespace-nowrap">
             Curantis Specialty Care
           </span>
         </div>

@@ -6,6 +6,8 @@ import { Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [form, setForm] = useState({
     name: '', email: '', phone: '', type: 'general', message: '',
   });
@@ -14,10 +16,26 @@ export default function ContactPage() {
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact form:', form);
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch('https://formspree.io/f/maqgywed', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -137,12 +155,18 @@ export default function ContactPage() {
                         className="w-full px-4 py-2.5 border border-navy-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 resize-y" />
                     </div>
                     <p className="text-xs text-navy-500">
-                      Please do not include sensitive personal health information in this form. 
-                      For clinical matters, use the <Link href="/refer" className="text-brand-600 underline">referral form</Link> or 
+                      Please do not include sensitive personal health information in this form.
+                      For clinical matters, use the <Link href="/refer" className="text-brand-600 underline">referral form</Link> or
                       contact us by phone.
                     </p>
-                    <button type="submit" className="btn-primary">
-                      <Send className="w-4 h-4 mr-2" /> Send Message
+                    {error && (
+                      <p className="text-sm text-red-600">
+                        Something went wrong. Please try again or email us directly at{' '}
+                        <a href="mailto:info@curantiscare.ca" className="underline">info@curantiscare.ca</a>.
+                      </p>
+                    )}
+                    <button type="submit" disabled={loading} className="btn-primary disabled:opacity-60 disabled:cursor-not-allowed">
+                      <Send className="w-4 h-4 mr-2" /> {loading ? 'Sending…' : 'Send Message'}
                     </button>
                   </form>
                 </div>
