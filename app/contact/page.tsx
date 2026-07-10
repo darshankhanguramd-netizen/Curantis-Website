@@ -24,7 +24,10 @@ export default function ContactPage() {
       const res = await fetch('https://formspree.io/f/maqgywed', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          _subject: `Website enquiry from ${form.name} — ${form.type}`,
+        }),
       });
       if (res.ok) {
         setSubmitted(true);
