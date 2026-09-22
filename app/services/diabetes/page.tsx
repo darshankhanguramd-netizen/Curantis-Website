@@ -78,6 +78,8 @@ export default function DiabetesPage() {
                 'Recurrent hypoglycemia or diabetic ketoacidosis',
                 'Diabetes with multiple comorbidities',
                 'Pre-diabetes with high cardiovascular risk',
+                'Obesity requiring medical assessment and management',
+                'Weight management with metabolic or endocrine complexity',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-brand-500 mt-0.5 shrink-0" />

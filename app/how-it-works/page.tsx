@@ -28,14 +28,14 @@ const steps = [
     step: '03',
     title: 'Virtual Consultation',
     description: 'Meet with your specialist by secure video through Medeo Health — a PHIPA-compliant virtual care platform. This is a real clinical consultation where your specialist reviews your data, discusses your health concerns, and works with you to develop a plan.',
-    detail: 'Initial consultations are typically 20–30 minutes. All you need is a device with a camera, a microphone, and a stable internet connection. A private, quiet space is recommended. You can also message your care team securely through Medeo Health.',
+    detail: 'Initial consultations are typically 20–30 minutes. All you need is a device with a camera, a microphone, and a stable internet connection. A private, quiet space is recommended.',
   },
   {
     icon: Heart,
     step: '04',
     title: 'Care Plan & Communication',
     description: 'Your specialist develops a detailed care plan including medication changes, lifestyle recommendations, and any further investigations. A clear consult note is sent to your referring physician.',
-    detail: 'Prescriptions (if needed) are sent electronically to your pharmacy. Lab and imaging requisitions are sent directly to you through Medeo Health. You can also use Medeo Health to message your care team securely between appointments. Your family doctor receives a full summary so there are no gaps in communication.',
+    detail: 'Prescriptions (if needed) are sent electronically to your pharmacy. Lab and imaging requisitions are sent directly to you through Medeo Health. Your family doctor receives a full summary so there are no gaps in communication.',
   },
   {
     icon: RefreshCw,
@@ -103,7 +103,6 @@ export default function HowItWorksPage() {
             {[
               { icon: Video, title: 'Video Visits', desc: 'Your virtual appointments are conducted through Medeo Health\'s encrypted video platform, accessible from any device.' },
               { icon: FileText, title: 'Lab & Imaging Requisitions', desc: 'After your appointment, requisitions for labs or imaging are sent to you directly through your Medeo Health account.' },
-              { icon: ClipboardList, title: 'Secure Messaging', desc: 'You can message your care team securely through Medeo Health between appointments for non-urgent questions.' },
             ].map((item, i) => (
               <div key={i} className="card p-6">
                 <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
