@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FileText, Clock, CheckCircle2, ArrowRight, Download } from 'lucide-react';
+import { FileText, Clock, CheckCircle2, ArrowRight, Download, Globe } from 'lucide-react';
 import DownloadAndNavigateButton from '@/components/DownloadAndNavigateButton';
 
 export const metadata: Metadata = {
@@ -78,10 +78,30 @@ export default function ForProvidersPage() {
             </div>
             <div className="card p-6 flex gap-6 items-start">
               <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
+                <Globe className="w-5 h-5 text-brand-600" />
+              </div>
+              <div>
+                <h4 className="font-display text-lg mb-1">Option 2: Refer via OceanMD</h4>
+                <p className="text-sm text-navy-600 mb-3">
+                  Use the OceanMD platform to send a digital referral directly — fast, paperless,
+                  and integrated with most EMR systems.
+                </p>
+                <a
+                  href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-600 hover:text-brand-800 text-sm font-medium inline-flex items-center gap-1"
+                >
+                  Open OceanMD referral portal <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+            <div className="card p-6 flex gap-6 items-start">
+              <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
                 <FileText className="w-5 h-5 text-brand-600" />
               </div>
               <div>
-                <h4 className="font-display text-lg mb-1">Option 2: Your Own Referral Form</h4>
+                <h4 className="font-display text-lg mb-1">Option 3: Your Own Referral Form</h4>
                 <p className="text-sm text-navy-600 mb-3">
                   Use any blank referral form of your choosing. Please ensure the details in
                   the section below are included in your referral to avoid delays.
@@ -141,13 +161,22 @@ export default function ForProvidersPage() {
         <div className="container-wide text-center max-w-2xl mx-auto">
           <h2 className="text-white text-3xl">Ready to Refer?</h2>
           <p className="mt-4 text-navy-200 text-lg">
-            Download the PDF referral form, complete it, and fax it to our office.
+            Choose the referral method that works best for you.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <DownloadAndNavigateButton
               className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors"
               label="Download Referral Form & Fax Instructions"
             />
+            <a
+              href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-brand-500 text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-600 transition-colors"
+            >
+              <Globe className="w-4 h-4" />
+              Refer via OceanMD
+            </a>
           </div>
         </div>
       </section>

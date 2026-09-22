@@ -22,8 +22,8 @@ const sections: Section[] = [
       {
         title: 'Diabetes Canada — The Glycemic Index Guide',
         description: 'A practical guide to understanding the glycemic index and making informed food choices for blood sugar management.',
-        href: 'https://www.diabetes.ca/DiabetesCanadaWebsite/media/Managing-My-Diabetes/Tools%20and%20Resources/glycemic-index-food-guide.pdf?ext=.pdf',
-        type: 'external',
+        href: '/documents/glycemic-index-food-guide.pdf',
+        type: 'download',
       },
       {
         title: 'Low Carbohydrate Snacks',
@@ -45,8 +45,8 @@ const sections: Section[] = [
       {
         title: 'Diabetes Canada — The Glycemic Index Guide',
         description: 'A practical guide to understanding the glycemic index and making informed food choices for weight management.',
-        href: 'https://www.diabetes.ca/DiabetesCanadaWebsite/media/Managing-My-Diabetes/Tools%20and%20Resources/glycemic-index-food-guide.pdf?ext=.pdf',
-        type: 'external',
+        href: '/documents/glycemic-index-food-guide.pdf',
+        type: 'download',
       },
       {
         title: 'Low Carbohydrate Snacks',

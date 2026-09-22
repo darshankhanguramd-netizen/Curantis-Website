@@ -5,8 +5,8 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Pancreas from '@/components/icons/Pancreas';
 
 export const metadata: Metadata = {
-  title: 'Diabetes Care',
-  description: 'Virtual diabetes specialist care for Type 1, Type 2, insulin management, and complex diabetes. OHIP-covered consultations across Ontario.',
+  title: 'Endocrinology',
+  description: 'Virtual endocrinology care for Type 1 and Type 2 diabetes, insulin management, obesity medicine, and weight management. OHIP-covered consultations across Ontario.',
 };
 
 export default function DiabetesPage() {
@@ -18,10 +18,12 @@ export default function DiabetesPage() {
             <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
               <Pancreas className="w-4 h-4" /> OHIP Covered
             </div>
-            <h1><span className="text-primary-500">Diabetes Care</span></h1>
-            <p className="mt-6 text-lg text-navy-600">
-              Expert virtual consultations for Type 1 and Type 2 diabetes, insulin management, 
-              hypoglycemia, and complex metabolic care — delivered by a board-certified endocrinologist.
+            <h1><span className="text-primary-500">Endocrinology</span></h1>
+            <p className="mt-3 text-2xl font-display text-brand-600">Diabetes Care &amp; Weight Management</p>
+            <p className="mt-4 text-lg text-navy-600">
+              Expert virtual consultations for Type 1 and Type 2 diabetes, insulin management,
+              hypoglycemia, obesity medicine, weight management, and complex metabolic care —
+              delivered by a board-certified endocrinologist.
             </p>
             <div className="mt-8 flex gap-4">
               <Link href="/refer" className="btn-primary">Refer a Patient <ArrowRight className="w-4 h-4 ml-2" /></Link>
@@ -43,7 +45,7 @@ export default function DiabetesPage() {
 
       <section className="section-padding bg-white">
         <div className="container-wide">
-          <h2 className="mb-12">Conditions We Treat</h2>
+          <h2 className="mb-10">Conditions We Treat</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: 'Type 1 Diabetes', desc: 'Insulin optimization, CGM interpretation, and acute complication prevention.' },
@@ -52,6 +54,8 @@ export default function DiabetesPage() {
               { title: 'Complex Diabetes', desc: 'Multi-drug regimens, recurrent DKA, renal dosing adjustments, and steroid-induced diabetes.' },
               { title: 'Hypoglycemia', desc: 'Assessment of recurrent hypoglycemia, medication adjustment, and self-management education.' },
               { title: 'Pre-Diabetes', desc: 'Risk stratification, lifestyle intervention, and pharmacologic prevention strategies.' },
+              { title: 'Obesity Medicine', desc: 'Evidence-based assessment and medical management of obesity, including pharmacotherapy.' },
+              { title: 'Weight Management', desc: 'Individualized weight management plans addressing metabolic, dietary, and lifestyle factors.' },
             ].map((item, i) => (
               <div key={i} className="card p-6">
                 <h4 className="font-display text-lg mb-2">{item.title}</h4>

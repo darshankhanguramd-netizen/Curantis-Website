@@ -13,6 +13,7 @@ import {
   Printer,
   FileDown,
   ClipboardPenLine,
+  Globe,
 } from 'lucide-react';
 import Pancreas from '@/components/icons/Pancreas';
 
@@ -57,6 +58,17 @@ export default function HomePage() {
                 >
                   Referral form &amp; fax details
                 </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <Globe className="w-4 h-4 text-brand-600 shrink-0" aria-hidden />
+                <a
+                  href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-brand-700 hover:text-brand-800 underline-offset-2 hover:underline"
+                >
+                  Refer via OceanMD
+                </a>
               </li>
             </ul>
           </div>
@@ -177,9 +189,9 @@ export default function HomePage() {
             {[
               {
                 icon: Pancreas,
-                title: 'Diabetes Care',
+                title: 'Endocrinology',
                 href: '/services/diabetes',
-                description: 'Type 1, Type 2, insulin management, complex diabetes, and glucose optimization.',
+                description: 'Type 1, Type 2, insulin management, complex diabetes, obesity medicine, and weight management.',
                 tag: 'OHIP Covered',
               },
               {

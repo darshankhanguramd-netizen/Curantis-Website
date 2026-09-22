@@ -10,7 +10,7 @@ const navigation = [
     name: 'Services',
     href: '/services',
     children: [
-      { name: 'Diabetes Care', href: '/services/diabetes' },
+      { name: 'Endocrinology', href: '/services/diabetes' },
       { name: 'Respirology', href: '/services/respirology' },
     ],
   },

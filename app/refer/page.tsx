@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FileText, Download, AlertCircle } from 'lucide-react';
+import { FileText, Download, AlertCircle, Globe } from 'lucide-react';
 import DownloadAndScrollButton from '@/components/DownloadAndScrollButton';
 
 export default function ReferPage() {
@@ -34,25 +34,47 @@ export default function ReferPage() {
             </div>
           </div>
 
-          <div className="card p-8 md:p-12 text-center">
-            <FileText className="w-12 h-12 text-brand-600 mx-auto mb-4" />
-            <h2 className="font-display text-2xl text-navy-900">Download &amp; fax</h2>
-            <p className="mt-4 max-w-lg mx-auto text-navy-600">
-              Download our referral form, complete it, and fax to{' '}
-              <strong>(289) 644-0454</strong>. Referrals are typically processed within 2–3 business
-              days.
-            </p>
-            <a
-              href="/documents/curantis-referral-form.pdf"
-              download
-              className="btn-primary mt-8 inline-flex"
-            >
-              <Download className="w-4 h-4 mr-2" />
-              Download Referral Form (PDF)
-            </a>
-            <p className="mt-4 text-xs text-navy-500">
-              PDF format — print, complete, sign, and fax to (289) 644-0454
-            </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card p-8 text-center">
+              <FileText className="w-12 h-12 text-brand-600 mx-auto mb-4" />
+              <h2 className="font-display text-2xl text-navy-900">Download &amp; Fax</h2>
+              <p className="mt-4 text-navy-600 text-sm">
+                Download our referral form, complete it, and fax to{' '}
+                <strong>(289) 644-0454</strong>. Referrals are typically processed within 2–3 business
+                days.
+              </p>
+              <a
+                href="/documents/curantis-referral-form.pdf"
+                download
+                className="btn-primary mt-8 inline-flex"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download Referral Form (PDF)
+              </a>
+              <p className="mt-4 text-xs text-navy-500">
+                PDF format — print, complete, sign, and fax to (289) 644-0454
+              </p>
+            </div>
+            <div className="card p-8 text-center border-brand-200">
+              <Globe className="w-12 h-12 text-brand-600 mx-auto mb-4" />
+              <h2 className="font-display text-2xl text-navy-900">Refer via OceanMD</h2>
+              <p className="mt-4 text-navy-600 text-sm">
+                Use the OceanMD platform to send a digital referral directly. Fast, paperless,
+                and integrated with most EMR systems.
+              </p>
+              <a
+                href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary mt-8 inline-flex"
+              >
+                <Globe className="w-4 h-4 mr-2" />
+                Refer via OceanMD
+              </a>
+              <p className="mt-4 text-xs text-navy-500">
+                Opens the OceanMD referral portal in a new tab
+              </p>
+            </div>
           </div>
 
           <p className="mt-10 text-center text-sm text-navy-500">

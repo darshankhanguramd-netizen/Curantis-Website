@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Printer } from 'lucide-react';
+import { Phone, Mail, MapPin, Printer, Globe } from 'lucide-react';
 
 const footerNav = {
   services: [
-    { name: 'Diabetes Care', href: '/services/diabetes' },
+    { name: 'Endocrinology', href: '/services/diabetes' },
     { name: 'Respirology', href: '/services/respirology' },
   ],
   patients: [
@@ -16,6 +16,7 @@ const footerNav = {
     { name: 'About Us', href: '/about' },
     { name: 'Our Team', href: '/team' },
     { name: 'Refer a Patient', href: '/refer' },
+    { name: 'Fees & Payments', href: '/payments' },
     { name: 'Contact Us', href: '/contact' },
   ],
   legal: [
@@ -38,10 +39,19 @@ export default function Footer() {
               Ready to refer a patient?
             </h3>
             <p className="text-brand-100 mt-2 text-lg">
-              Download our PDF referral form and fax it to our office.
+              Refer digitally via OceanMD or download our PDF form and fax it to our office.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
+            <a
+              href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-brand-500 text-white font-medium px-6 py-3 rounded-xl hover:bg-brand-600 transition-colors"
+            >
+              <Globe className="w-4 h-4" />
+              Refer via OceanMD
+            </a>
             <Link href="/refer#download" className="bg-white text-navy-900 font-medium px-6 py-3 rounded-xl hover:bg-navy-50 transition-colors">
               Download Form &amp; Fax Instructions
             </Link>

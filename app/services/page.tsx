@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Pancreas,
-    title: 'Diabetes Care',
+    title: 'Endocrinology',
     href: '/services/diabetes',
     tag: 'OHIP Covered',
     description:
-      'Comprehensive management of Type 1 and Type 2 diabetes, including insulin optimization, hypoglycemia management, continuous glucose monitoring interpretation, and complex diabetes co-management.',
+      'Comprehensive management of Type 1 and Type 2 diabetes, insulin optimization, hypoglycemia, complex metabolic care, obesity medicine, and weight management — delivered by a board-certified endocrinologist.',
     conditions: [
       'Type 1 Diabetes',
       'Type 2 Diabetes',
@@ -25,6 +25,8 @@ const services = [
       'Pre-diabetes / metabolic syndrome',
       'Gestational diabetes follow-up',
       'Complex multi-drug regimen optimization',
+      'Obesity Medicine',
+      'Weight Management',
     ],
   },
   {
