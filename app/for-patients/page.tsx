@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Shield, Clock, MapPin, CheckCircle2, Phone } from 'lucide-react';
+import { Shield, Clock, MapPin, CheckCircle2, Phone, Video, FileText, MessageSquare, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'For Patients',
@@ -82,9 +82,9 @@ export default function ForPatientsPage() {
           <h2 className="mb-8">What to Expect at Your Appointment</h2>
           <div className="space-y-6">
             {[
-              { q: 'Before your visit', a: 'Our team will contact you to schedule your appointment and let you know what to have ready — medication list, recent lab results, glucose data, and your OHIP card.' },
-              { q: 'During your visit', a: 'You\'ll meet with your specialist by secure video for 20–30 minutes. They\'ll review your health information, ask questions, discuss findings, and build a care plan with you.' },
-              { q: 'After your visit', a: 'Your specialist sends a detailed summary and care plan to your family doctor. Prescriptions (if needed) go to your pharmacy electronically. Additional requisitions (labs and imaging) will be emailed to you directly. Follow-up visits are scheduled as needed.' },
+              { q: 'Before your visit', a: 'Our team will contact you to schedule your appointment and let you know what to have ready — medication list, recent lab results, glucose data, and your OHIP card. You will also need to create a Medeo Health account to join your video visit and receive any requisitions sent after your appointment.' },
+              { q: 'During your visit', a: 'You\'ll meet with your specialist by secure video through Medeo Health for 20–30 minutes. They\'ll review your health information, ask questions, discuss findings, and build a care plan with you. You can also message your care team through Medeo Health between appointments.' },
+              { q: 'After your visit', a: 'Your specialist sends a detailed summary and care plan to your family doctor. Prescriptions (if needed) go to your pharmacy electronically. Lab and imaging requisitions are sent to you directly through your Medeo Health account. Follow-up visits are scheduled as needed.' },
               { q: 'Allied health services', a: 'If recommended, you can access dietitian, diabetes educator, or respiratory therapy sessions. These will be private-pay when available — contact us for updates and pricing.' },
             ].map((item, i) => (
               <div key={i} className="card p-6">
@@ -96,14 +96,49 @@ export default function ForPatientsPage() {
         </div>
       </section>
 
+      {/* Medeo Health Platform */}
       <section className="section-padding bg-white">
+        <div className="container-wide max-w-3xl">
+          <h2 className="mb-4">Our Virtual Care Platform</h2>
+          <p className="text-navy-600 mb-8">
+            Curantis uses <strong>Medeo Health</strong> — a secure, PHIPA-compliant platform — to deliver your virtual care.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {[
+              { icon: Video, title: 'Video Visits', desc: 'Your virtual appointments take place through Medeo Health\'s encrypted video platform, accessible from any smartphone, tablet, or computer.' },
+              { icon: FileText, title: 'Lab & Imaging Requisitions', desc: 'After your appointment, any lab or imaging requisitions are sent to you directly and securely through your Medeo Health account.' },
+              { icon: MessageSquare, title: 'Secure Messaging', desc: 'You can send non-urgent messages to your care team securely through Medeo Health between appointments.' },
+            ].map((item, i) => (
+              <div key={i} className="card p-6">
+                <div className="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5 text-brand-600" />
+                </div>
+                <h4 className="font-display text-base mb-2">{item.title}</h4>
+                <p className="text-sm text-navy-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <a
+            href="https://qhrtech.my.site.com/patient/s/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-brand-600 hover:text-brand-800 font-medium text-sm"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Visit the Medeo Health patient support page
+          </a>
+        </div>
+      </section>
+
+      <section className="section-padding bg-navy-50/50">
         <div className="container-wide max-w-3xl">
           <h2 className="mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
               { q: 'Do I need a referral?', a: 'Yes. OHIP-covered specialist consultations require a referral from your family doctor or nurse practitioner. Some private-pay allied health services may not require a referral — contact us to confirm.' },
               { q: 'Is there a cost?', a: 'Specialist physician consultations are covered by OHIP at no cost to you. Allied health services (dietitian, CDE, respiratory therapy) will be private-pay when offered — contact us for current information.' },
-              { q: 'What technology do I need?', a: 'A smartphone, tablet, or computer with a camera, microphone, and internet connection. We\'ll send you instructions on how to join your video visit.' },
+              { q: 'What technology do I need?', a: 'A smartphone, tablet, or computer with a camera, microphone, and internet connection. Your video visit takes place through Medeo Health — we\'ll send you instructions on how to join.' },
+              { q: 'What is Medeo Health?', a: 'Medeo Health is the secure, PHIPA-compliant platform we use for video visits, sending lab and imaging requisitions, and secure messaging with your care team. You can access patient support at qhrtech.my.site.com/patient/s/' },
               { q: 'Is my information secure?', a: 'Yes. We use PHIPA-compliant platforms and encrypted video. Your health information is protected under Ontario\'s privacy legislation. See our Privacy Policy for details.' },
               { q: 'Can I see a specialist if I live in rural Ontario?', a: 'Absolutely — that\'s a core reason we exist. Our virtual model is designed specifically to serve patients in rural, northern, and underserved communities across Ontario.' },
             ].map((item, i) => (
