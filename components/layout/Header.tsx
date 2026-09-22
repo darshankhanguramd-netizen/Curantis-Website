@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Printer, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Printer, ChevronDown, ShoppingCart } from 'lucide-react';
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -19,6 +19,7 @@ const navigation = [
   { name: 'For Providers', href: '/for-providers' },
   { name: 'Team', href: '/team' },
   { name: 'Resources', href: '/resources' },
+  { name: 'Payments', href: '/payments', icon: ShoppingCart },
 ];
 
 export default function Header() {
@@ -114,8 +115,9 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-navy-700 hover:text-brand-600 rounded-lg hover:bg-brand-50 transition-colors"
+                  className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-navy-700 hover:text-brand-600 rounded-lg hover:bg-brand-50 transition-colors"
                 >
+                  {item.icon && <item.icon className="w-3.5 h-3.5" />}
                   {item.name}
                 </Link>
               )
@@ -149,9 +151,10 @@ export default function Header() {
               <div key={item.name}>
                 <Link
                   href={item.href}
-                  className="block px-4 py-3 text-base font-medium text-navy-700 hover:text-brand-600 hover:bg-brand-50 rounded-lg"
+                  className="flex items-center gap-2 px-4 py-3 text-base font-medium text-navy-700 hover:text-brand-600 hover:bg-brand-50 rounded-lg"
                   onClick={() => setMobileOpen(false)}
                 >
+                  {item.icon && <item.icon className="w-4 h-4" />}
                   {item.name}
                 </Link>
                 {item.children?.map((child) => (
