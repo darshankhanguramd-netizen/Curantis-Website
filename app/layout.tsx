@@ -20,8 +20,17 @@ export const metadata: Metadata = {
     'virtual endocrinology Ontario',
     'telemedicine specialist Ontario',
     'diabetes care Ontario',
+    'obesity medicine Ontario',
+    'weight management specialist Ontario',
+    'virtual clinic Ontario',
   ],
   authors: [{ name: 'Curantis Specialty Care' }],
+  other: {
+    'geo.region': 'CA-ON',
+    'geo.placename': 'Ontario, Canada',
+    'geo.position': '43.6532;-79.3832',
+    'ICBM': '43.6532, -79.3832',
+  },
   icons: {
     icon: [{ url: '/images/brand/curantis-logo.jpg', type: 'image/png' }],
     apple: '/images/brand/curantis-logo.jpg',
@@ -92,12 +101,30 @@ export default function RootLayout({
                 addressRegion: 'ON',
                 addressCountry: 'CA',
               },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: 43.6532,
+                longitude: -79.3832,
+              },
+              areaServed: {
+                '@type': 'State',
+                name: 'Ontario',
+                containedInPlace: {
+                  '@type': 'Country',
+                  name: 'Canada',
+                },
+              },
               medicalSpecialty: [
                 'Endocrinology',
                 'InternalMedicine',
                 'RespiratoryTherapy',
+                'ObesityMedicine',
               ],
               availableService: [
+                {
+                  '@type': 'MedicalProcedure',
+                  name: 'Virtual Endocrinology Consultation',
+                },
                 {
                   '@type': 'MedicalProcedure',
                   name: 'Virtual Diabetes Consultation',
@@ -105,6 +132,14 @@ export default function RootLayout({
                 {
                   '@type': 'MedicalProcedure',
                   name: 'Virtual Respirology Consultation',
+                },
+                {
+                  '@type': 'MedicalProcedure',
+                  name: 'Obesity Medicine Consultation',
+                },
+                {
+                  '@type': 'MedicalProcedure',
+                  name: 'Weight Management Consultation',
                 },
               ],
               physician: [
