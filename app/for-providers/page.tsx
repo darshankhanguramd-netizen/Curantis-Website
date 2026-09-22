@@ -22,6 +22,15 @@ export default function ForProvidersPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <DownloadAndNavigateButton className="btn-primary" label="Download Referral Form & Fax Instructions" />
+              <a
+                href="https://ocean.cognisantmd.com/referrals/NewReferral.html?rtRef=dr_darshan_singh_kha25002624"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-2"
+              >
+                <Globe className="w-4 h-4" />
+                Refer via OceanMD
+              </a>
             </div>
           </div>
           <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-navy-50 shadow-soft-lg">
