@@ -361,14 +361,14 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative w-full max-w-md mx-auto lg:max-w-none lg:mx-0">
+            <div className="relative w-full max-w-xs mx-auto lg:max-w-sm lg:mx-auto">
               <div className="relative aspect-[3/4] w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-navy-100 shadow-soft-lg ring-1 ring-navy-100/80">
                 <Image
                   src="/images/team/founder-home.png"
                   alt="Dr. Darshan Singh Khangura, co-founder and Medical Director"
                   fill
                   className="object-cover object-top"
-                  sizes="(max-width: 1024px) 100vw, 28rem"
+                  sizes="(max-width: 1024px) 80vw, 24rem"
                 />
               </div>
             </div>
